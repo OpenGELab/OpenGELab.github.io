@@ -1765,3 +1765,194 @@ body {
         font-size: 1.5rem;
     }
 }
+
+/* Modern Action Chart Styles */
+.action-chart-modern {
+    margin-top: 2.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    padding: 2.5rem;
+    border: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+.chart-bars-compact {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.chart-bar-item-modern {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.chart-bar-info-modern {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+.chart-bar-label-modern {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.chart-bar-label-modern i {
+    color: #818cf8;
+    font-size: 0.9rem;
+}
+
+.chart-bar-value-modern {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.bar-percentage-text {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.chart-bar-container-modern {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.chart-bar-fill-modern {
+    height: 100%;
+    border-radius: 8px;
+    transition: width 1s ease-out;
+    display: flex;
+    align-items: center;
+    padding-left: 0.8rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Modern Comparison Chart Styles */
+.comparison-chart-modern {
+    margin-top: 2.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    padding: 2.5rem;
+    border: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+.comparison-bars-modern {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.comparison-bar-item-modern {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.model-info-modern {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.model-name-modern {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.model-name-modern i {
+    color: #818cf8;
+    font-size: 1rem;
+}
+
+.model-accuracy-modern {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.champion-accuracy {
+    color: #10b981;
+}
+
+.comparison-bar-bg-modern {
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.comparison-bar-fill-modern {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1.2s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.bar-label-inside {
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.champion-bar-modern {
+    padding: 0.5rem;
+    background: rgba(16, 185, 129, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.champion-fill-modern {
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3) !important;
+}
+
+/* Responsive styles for modern charts */
+@media (max-width: 768px) {
+    .action-chart-modern,
+    .comparison-chart-modern {
+        padding: 1.5rem;
+    }
+    
+    .chart-bar-label-modern,
+    .model-name-modern {
+        font-size: 0.9rem;
+    }
+    
+    .chart-bar-value-modern,
+    .model-accuracy-modern {
+        font-size: 1rem;
+    }
+    
+    .chart-bar-container-modern {
+        height: 28px;
+    }
+    
+    .comparison-bar-bg-modern {
+        height: 35px;
+    }
+    
+    .bar-label-inside {
+        font-size: 0.85rem;
+    }
+}
