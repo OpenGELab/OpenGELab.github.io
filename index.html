@@ -306,6 +306,272 @@ python inference.py --task "Open settings and enable dark mode"</code></pre>
                         no complex engineering infrastructure, enabling rapid, cost-effective large-scale model iteration and testing.
                     </p>
                 </div>
+                <div class="action-distribution">
+                    <h4><i class="fas fa-chart-bar"></i> Action Type Distribution in Static Testing</h4>
+                    <div class="action-stats-grid">
+                        <div class="action-stat-card">
+                            <i class="fas fa-mouse-pointer"></i>
+                            <h5>CLICK</h5>
+                            <p class="action-count">1354 times</p>
+                            <p class="action-desc">Click operations</p>
+                        </div>
+                        <div class="action-stat-card">
+                            <i class="fas fa-check-circle"></i>
+                            <h5>COMPLETE</h5>
+                            <p class="action-count">410 times</p>
+                            <p class="action-desc">Task completion</p>
+                        </div>
+                        <div class="action-stat-card">
+                            <i class="fas fa-power-off"></i>
+                            <h5>AWAKE</h5>
+                            <p class="action-count">528 times</p>
+                            <p class="action-desc">Wake up application</p>
+                        </div>
+                        <div class="action-stat-card">
+                            <i class="fas fa-keyboard"></i>
+                            <h5>TYPE</h5>
+                            <p class="action-count">371 times</p>
+                            <p class="action-desc">Text input</p>
+                        </div>
+                        <div class="action-stat-card">
+                            <i class="fas fa-info-circle"></i>
+                            <h5>INFO</h5>
+                            <p class="action-count">305 times</p>
+                            <p class="action-desc">Information query</p>
+                        </div>
+                        <div class="action-stat-card">
+                            <i class="fas fa-clock"></i>
+                            <h5>WAIT</h5>
+                            <p class="action-count">85 times</p>
+                            <p class="action-desc">Wait operation</p>
+                        </div>
+                        <div class="action-stat-card">
+                            <i class="fas fa-hand-point-up"></i>
+                            <h5>SLIDE</h5>
+                            <p class="action-count">93 times</p>
+                            <p class="action-desc">Swipe operation</p>
+                        </div>
+                    </div>
+                    <div class="action-chart">
+                        <h5><i class="fas fa-chart-bar"></i> Visual Distribution</h5>
+                        <div class="chart-bars">
+                            <div class="chart-bar-item">
+                                <div class="chart-bar-info">
+                                    <span class="chart-bar-label">CLICK</span>
+                                    <span class="chart-bar-percentage">1354</span>
+                                </div>
+                                <div class="chart-bar-container">
+                                    <div class="chart-bar-fill" style="width: 100%; background: linear-gradient(90deg, #6366f1, #8b5cf6);"></div>
+                                </div>
+                            </div>
+                            <div class="chart-bar-item">
+                                <div class="chart-bar-info">
+                                    <span class="chart-bar-label">AWAKE</span>
+                                    <span class="chart-bar-percentage">528</span>
+                                </div>
+                                <div class="chart-bar-container">
+                                    <div class="chart-bar-fill" style="width: 39%; background: linear-gradient(90deg, #10b981, #059669);"></div>
+                                </div>
+                            </div>
+                            <div class="chart-bar-item">
+                                <div class="chart-bar-info">
+                                    <span class="chart-bar-label">COMPLETE</span>
+                                    <span class="chart-bar-percentage">410</span>
+                                </div>
+                                <div class="chart-bar-container">
+                                    <div class="chart-bar-fill" style="width: 30.3%; background: linear-gradient(90deg, #f59e0b, #d97706);"></div>
+                                </div>
+                            </div>
+                            <div class="chart-bar-item">
+                                <div class="chart-bar-info">
+                                    <span class="chart-bar-label">TYPE</span>
+                                    <span class="chart-bar-percentage">371</span>
+                                </div>
+                                <div class="chart-bar-container">
+                                    <div class="chart-bar-fill" style="width: 27.4%; background: linear-gradient(90deg, #ec4899, #db2777);"></div>
+                                </div>
+                            </div>
+                            <div class="chart-bar-item">
+                                <div class="chart-bar-info">
+                                    <span class="chart-bar-label">INFO</span>
+                                    <span class="chart-bar-percentage">305</span>
+                                </div>
+                                <div class="chart-bar-container">
+                                    <div class="chart-bar-fill" style="width: 22.5%; background: linear-gradient(90deg, #06b6d4, #0891b2);"></div>
+                                </div>
+                            </div>
+                            <div class="chart-bar-item">
+                                <div class="chart-bar-info">
+                                    <span class="chart-bar-label">SLIDE</span>
+                                    <span class="chart-bar-percentage">93</span>
+                                </div>
+                                <div class="chart-bar-container">
+                                    <div class="chart-bar-fill" style="width: 6.9%; background: linear-gradient(90deg, #8b5cf6, #7c3aed);"></div>
+                                </div>
+                            </div>
+                            <div class="chart-bar-item">
+                                <div class="chart-bar-info">
+                                    <span class="chart-bar-label">WAIT</span>
+                                    <span class="chart-bar-percentage">85</span>
+                                </div>
+                                <div class="chart-bar-container">
+                                    <div class="chart-bar-fill" style="width: 6.3%; background: linear-gradient(90deg, #ef4444, #dc2626);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Static Benchmark Results -->
+                <div class="benchmark-results">
+                    <h4><i class="fas fa-award"></i> AndroidDaily Static Benchmark Results</h4>
+                    <p class="benchmark-intro-text">
+                        Comparison of model accuracy on the AndroidDaily static benchmark. GELab-Zero-4b-preview demonstrates exceptional performance with 73.4% accuracy, significantly outperforming other state-of-the-art models.
+                    </p>
+                    <div class="model-results-grid">
+                        <div class="model-result-card">
+                            <div class="model-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h5 class="model-name">GPT-4o</h5>
+                            <div class="accuracy-container">
+                                <div class="accuracy-circle" data-accuracy="19.6">
+                                    <svg viewBox="0 0 100 100">
+                                        <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                                        <circle class="circle-progress" cx="50" cy="50" r="40" 
+                                                style="stroke-dasharray: 251.2; stroke-dashoffset: 201.97; stroke: #94a3b8;"></circle>
+                                    </svg>
+                                    <div class="accuracy-text">
+                                        <span class="accuracy-value">19.6%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="model-score">Accuracy: 0.196</p>
+                        </div>
+
+                        <div class="model-result-card">
+                            <div class="model-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h5 class="model-name">Gemini-2.5-pro-thinking</h5>
+                            <div class="accuracy-container">
+                                <div class="accuracy-circle" data-accuracy="36.6">
+                                    <svg viewBox="0 0 100 100">
+                                        <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                                        <circle class="circle-progress" cx="50" cy="50" r="40" 
+                                                style="stroke-dasharray: 251.2; stroke-dashoffset: 159.26; stroke: #60a5fa;"></circle>
+                                    </svg>
+                                    <div class="accuracy-text">
+                                        <span class="accuracy-value">36.6%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="model-score">Accuracy: 0.366</p>
+                        </div>
+
+                        <div class="model-result-card">
+                            <div class="model-icon">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <h5 class="model-name">UI-TARS-1.5</h5>
+                            <div class="accuracy-container">
+                                <div class="accuracy-circle" data-accuracy="47.0">
+                                    <svg viewBox="0 0 100 100">
+                                        <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                                        <circle class="circle-progress" cx="50" cy="50" r="40" 
+                                                style="stroke-dasharray: 251.2; stroke-dashoffset: 133.14; stroke: #a78bfa;"></circle>
+                                    </svg>
+                                    <div class="accuracy-text">
+                                        <span class="accuracy-value">47.0%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="model-score">Accuracy: 0.470</p>
+                        </div>
+
+                        <div class="model-result-card champion">
+                            <div class="champion-badge">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="model-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h5 class="model-name">GELab-Zero-4b-preview</h5>
+                            <div class="accuracy-container">
+                                <div class="accuracy-circle" data-accuracy="73.4">
+                                    <svg viewBox="0 0 100 100">
+                                        <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                                        <circle class="circle-progress" cx="50" cy="50" r="40" 
+                                                style="stroke-dasharray: 251.2; stroke-dashoffset: 66.82; stroke: #10b981;"></circle>
+                                    </svg>
+                                    <div class="accuracy-text">
+                                        <span class="accuracy-value">73.4%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="model-score">Accuracy: 0.734</p>
+                            <p class="champion-label"><i class="fas fa-trophy"></i> Best Performance</p>
+                        </div>
+                    </div>
+
+                    <!-- Comparison Chart -->
+                    <div class="comparison-chart">
+                        <h5><i class="fas fa-chart-line"></i> Model Accuracy Comparison</h5>
+                        <div class="comparison-bars">
+                            <div class="comparison-bar-item">
+                                <div class="comparison-bar-header">
+                                    <span class="comparison-model-name">GPT-4o</span>
+                                    <span class="comparison-accuracy">19.6%</span>
+                                </div>
+                                <div class="comparison-bar-bg">
+                                    <div class="comparison-bar-fill" style="width: 19.6%; background: linear-gradient(90deg, #94a3b8, #64748b);"></div>
+                                </div>
+                            </div>
+                            <div class="comparison-bar-item">
+                                <div class="comparison-bar-header">
+                                    <span class="comparison-model-name">Gemini-2.5-pro-thinking</span>
+                                    <span class="comparison-accuracy">36.6%</span>
+                                </div>
+                                <div class="comparison-bar-bg">
+                                    <div class="comparison-bar-fill" style="width: 36.6%; background: linear-gradient(90deg, #60a5fa, #3b82f6);"></div>
+                                </div>
+                            </div>
+                            <div class="comparison-bar-item">
+                                <div class="comparison-bar-header">
+                                    <span class="comparison-model-name">UI-TARS-1.5</span>
+                                    <span class="comparison-accuracy">47.0%</span>
+                                </div>
+                                <div class="comparison-bar-bg">
+                                    <div class="comparison-bar-fill" style="width: 47.0%; background: linear-gradient(90deg, #a78bfa, #8b5cf6);"></div>
+                                </div>
+                            </div>
+                            <div class="comparison-bar-item champion-bar">
+                                <div class="comparison-bar-header">
+                                    <span class="comparison-model-name"><i class="fas fa-crown"></i> GELab-Zero-4b-preview</span>
+                                    <span class="comparison-accuracy">73.4%</span>
+                                </div>
+                                <div class="comparison-bar-bg">
+                                    <div class="comparison-bar-fill champion-fill" style="width: 73.4%; background: linear-gradient(90deg, #10b981, #059669);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="benchmark-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <p><strong>+26.4%</strong> improvement over UI-TARS-1.5</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-bolt"></i>
+                            <p><strong>3.7x</strong> better than GPT-4o</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-trophy"></i>
+                            <p><strong>#1</strong> on AndroidDaily Static Benchmark</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <!-- End-to-End Benchmark -->
@@ -335,67 +601,97 @@ python inference.py --task "Open settings and enable dark mode"</code></pre>
                         the highest ecological validity, authentically reflecting Agent comprehensive capabilities in complex environments.
                     </p>
                 </div>
-                <div class="task-list">
-                    <div class="task-item">
-                        <div class="task-header">
-                            <h4><i class="fas fa-utensils"></i> Food Delivery</h4>
-                            <span class="task-status success">✓ High Performance</span>
+                <div class="scenario-distribution">
+                    <h4><i class="fas fa-chart-pie"></i> Scenario Distribution in End-to-End Benchmark</h4>
+                    <div class="scenario-stats-grid">
+                        <div class="scenario-stat-card">
+                            <i class="fas fa-car"></i>
+                            <h5>Transportation</h5>
+                            <p class="scenario-count">78 tasks (33.19%)</p>
+                            <p class="scenario-desc">Ride-hailing, navigation, public transportation, etc.</p>
                         </div>
-                        <p>Order food from delivery apps, select restaurants, customize items, and complete checkout</p>
-                        <div class="task-score">Success Rate: 78.5%</div>
+                        <div class="scenario-stat-card">
+                            <i class="fas fa-shopping-cart"></i>
+                            <h5>Shopping & Payment</h5>
+                            <p class="scenario-count">61 tasks (25.96%)</p>
+                            <p class="scenario-desc">E-commerce shopping, payment, order management, etc.</p>
+                        </div>
+                        <div class="scenario-stat-card">
+                            <i class="fas fa-comment-dots"></i>
+                            <h5>Social Communication</h5>
+                            <p class="scenario-count">43 tasks (18.3%)</p>
+                            <p class="scenario-desc">Message sending, social interactions, etc.</p>
+                        </div>
+                        <div class="scenario-stat-card">
+                            <i class="fas fa-newspaper"></i>
+                            <h5>Content Consumption</h5>
+                            <p class="scenario-count">37 tasks (15.74%)</p>
+                            <p class="scenario-desc">News reading, video watching, content bookmarking, etc.</p>
+                        </div>
+                        <div class="scenario-stat-card">
+                            <i class="fas fa-store"></i>
+                            <h5>Local Services</h5>
+                            <p class="scenario-count">16 tasks (6.81%)</p>
+                            <p class="scenario-desc">Food delivery, in-store services, etc.</p>
+                        </div>
                     </div>
-                    
-                    <div class="task-item">
-                        <div class="task-header">
-                            <h4><i class="fas fa-car"></i> Ride-Hailing</h4>
-                            <span class="task-status success">✓ High Performance</span>
+                    <div class="scenario-chart">
+                        <h5><i class="fas fa-chart-bar"></i> Visual Distribution</h5>
+                        <div class="chart-bars">
+                            <div class="chart-bar-item">
+                                <div class="chart-bar-info">
+                                    <span class="chart-bar-label">Transportation</span>
+                                    <span class="chart-bar-percentage">33.19%</span>
+                                </div>
+                                <div class="chart-bar-container">
+                                    <div class="chart-bar-fill" style="width: 33.19%; background: linear-gradient(90deg, #6366f1, #8b5cf6);"></div>
+                                </div>
+                            </div>
+                            <div class="chart-bar-item">
+                                <div class="chart-bar-info">
+                                    <span class="chart-bar-label">Shopping & Payment</span>
+                                    <span class="chart-bar-percentage">25.96%</span>
+                                </div>
+                                <div class="chart-bar-container">
+                                    <div class="chart-bar-fill" style="width: 25.96%; background: linear-gradient(90deg, #10b981, #059669);"></div>
+                                </div>
+                            </div>
+                            <div class="chart-bar-item">
+                                <div class="chart-bar-info">
+                                    <span class="chart-bar-label">Social Communication</span>
+                                    <span class="chart-bar-percentage">18.3%</span>
+                                </div>
+                                <div class="chart-bar-container">
+                                    <div class="chart-bar-fill" style="width: 18.3%; background: linear-gradient(90deg, #f59e0b, #d97706);"></div>
+                                </div>
+                            </div>
+                            <div class="chart-bar-item">
+                                <div class="chart-bar-info">
+                                    <span class="chart-bar-label">Content Consumption</span>
+                                    <span class="chart-bar-percentage">15.74%</span>
+                                </div>
+                                <div class="chart-bar-container">
+                                    <div class="chart-bar-fill" style="width: 15.74%; background: linear-gradient(90deg, #ec4899, #db2777);"></div>
+                                </div>
+                            </div>
+                            <div class="chart-bar-item">
+                                <div class="chart-bar-info">
+                                    <span class="chart-bar-label">Local Services</span>
+                                    <span class="chart-bar-percentage">6.81%</span>
+                                </div>
+                                <div class="chart-bar-container">
+                                    <div class="chart-bar-fill" style="width: 6.81%; background: linear-gradient(90deg, #06b6d4, #0891b2);"></div>
+                                </div>
+                            </div>
                         </div>
-                        <p>Book rides, set pickup and destination locations, select vehicle types</p>
-                        <div class="task-score">Success Rate: 82.3%</div>
-                    </div>
-                    
-                    <div class="task-item">
-                        <div class="task-header">
-                            <h4><i class="fas fa-shopping-cart"></i> Online Shopping</h4>
-                            <span class="task-status success">✓ High Performance</span>
-                        </div>
-                        <p>Search products, compare options, add to cart, and process orders</p>
-                        <div class="task-score">Success Rate: 74.2%</div>
-                    </div>
-                    
-                    <div class="task-item">
-                        <div class="task-header">
-                            <h4><i class="fas fa-comment-dots"></i> Messaging</h4>
-                            <span class="task-status success">✓ High Performance</span>
-                        </div>
-                        <p>Send messages, share content, manage conversations across social apps</p>
-                        <div class="task-score">Success Rate: 85.1%</div>
-                    </div>
-                    
-                    <div class="task-item">
-                        <div class="task-header">
-                            <h4><i class="fas fa-bookmark"></i> Content Curation</h4>
-                            <span class="task-status success">✓ High Performance</span>
-                        </div>
-                        <p>Browse, favorite, and organize content from various media applications</p>
-                        <div class="task-score">Success Rate: 79.8%</div>
-                    </div>
-                    
-                    <div class="task-item">
-                        <div class="task-header">
-                            <h4><i class="fas fa-film"></i> Entertainment</h4>
-                            <span class="task-status success">✓ High Performance</span>
-                        </div>
-                        <p>Search for movies, shows, and entertainment content based on preferences</p>
-                        <div class="task-score">Success Rate: 71.4%</div>
                     </div>
                 </div>
                 <div class="performance-highlight">
                     <h4><i class="fas fa-medal"></i> Benchmark Performance</h4>
                     <p>
-                        <strong>GELab-1-8B</strong> achieved a <strong>76.6% success rate</strong> on the AndroidWorld test set, 
-                        demonstrating exceptional performance on complex mobile tasks. Representative tasks include ride-hailing, 
-                        shopping, message sending, content bookmarking, food delivery ordering, and more.
+                        Representative tasks include ride-hailing, shopping, message sending, content bookmarking, food delivery ordering, and more. 
+                        <strong>GELab-1-8B</strong> achieved a <strong>76.6% success rate</strong> in the AndroidWorld test, 
+                        demonstrating exceptional performance on complex mobile tasks.
                     </p>
                 </div>
             </div>
@@ -409,7 +705,7 @@ python inference.py --task "Open settings and enable dark mode"</code></pre>
                 <i class="fas fa-trophy"></i> Open Benchmark
             </h2>
             <p class="section-description">
-                We conducted comprehensive evaluations of the GELab-4B model across multiple open-source benchmarks, covering various dimensions including GUI understanding, localization, and interaction. Below are the comparison results with other open-source models.
+                We conducted comprehensive evaluations of the GELab-Zero-4b-preview model across multiple open-source benchmarks, covering various dimensions including GUI understanding, localization, and interaction. Below are the comparison results with other open-source models.
             </p>
             
             <!-- Benchmark Charts -->
@@ -436,7 +732,7 @@ python inference.py --task "Open settings and enable dark mode"</code></pre>
                             </div>
                         </div>
                         <div class="bar-group">
-                            <div class="bar-label">GELab-4B</div>
+                            <div class="bar-label">GELab-Zero-4b-preview</div>
                             <div class="bar-wrapper">
                                 <div class="bar bar-gelab" style="width: 93%;">
                                     <span class="bar-value">93.00</span>
@@ -468,7 +764,7 @@ python inference.py --task "Open settings and enable dark mode"</code></pre>
                             </div>
                         </div>
                         <div class="bar-group">
-                            <div class="bar-label">GELab-4B</div>
+                            <div class="bar-label">GELab-Zero-4b-preview</div>
                             <div class="bar-wrapper">
                                 <div class="bar bar-gelab highlight" style="width: 68.04%;">
                                     <span class="bar-value">68.04 ⭐</span>
@@ -500,7 +796,7 @@ python inference.py --task "Open settings and enable dark mode"</code></pre>
                             </div>
                         </div>
                         <div class="bar-group">
-                            <div class="bar-label">GELab-4B</div>
+                            <div class="bar-label">GELab-Zero-4b-preview</div>
                             <div class="bar-wrapper">
                                 <div class="bar bar-gelab" style="width: 60.51%;">
                                     <span class="bar-value">60.51</span>
@@ -532,7 +828,7 @@ python inference.py --task "Open settings and enable dark mode"</code></pre>
                             </div>
                         </div>
                         <div class="bar-group">
-                            <div class="bar-label">GELab-4B</div>
+                            <div class="bar-label">GELab-Zero-4b-preview</div>
                             <div class="bar-wrapper">
                                 <div class="bar bar-gelab highlight" style="width: 85.81%;">
                                     <span class="bar-value">85.81 ⭐</span>
@@ -564,7 +860,7 @@ python inference.py --task "Open settings and enable dark mode"</code></pre>
                             </div>
                         </div>
                         <div class="bar-group">
-                            <div class="bar-label">GELab-4B</div>
+                            <div class="bar-label">GELab-Zero-4b-preview</div>
                             <div class="bar-wrapper">
                                 <div class="bar bar-gelab highlight" style="width: 90.39%;">
                                     <span class="bar-value">90.39 ⭐</span>
@@ -596,7 +892,7 @@ python inference.py --task "Open settings and enable dark mode"</code></pre>
                             </div>
                         </div>
                         <div class="bar-group">
-                            <div class="bar-label">GELab-4B</div>
+                            <div class="bar-label">GELab-Zero-4b-preview</div>
                             <div class="bar-wrapper">
                                 <div class="bar bar-gelab highlight" style="width: 75%;">
                                     <span class="bar-value">75.86 ⭐</span>
@@ -610,15 +906,15 @@ python inference.py --task "Open settings and enable dark mode"</code></pre>
             <div class="benchmark-summary">
                 <h3><i class="fas fa-star"></i> Key Findings</h3>
                 <ul class="findings-list">
-                    <li><strong>ScreenSpot V2</strong>: GELab-4B achieved 93.00%, approaching top-tier model performance in screen element recognition</li>
-                    <li><strong>OSworld-G</strong>: GELab-4B obtained the best result of 68.04% in general operating system environment task execution</li>
-                    <li><strong>ScreenSpot-Pro</strong>: GELab-4B reached 60.51% in complex scenario element localization</li>
-                    <li><strong>MMBench-GUI</strong>: GELab-4B leads with 85.81% in GUI multi-modal understanding capability</li>
-                    <li><strong>VisualWebBench-Grounding</strong>: GELab-4B achieved excellent performance at 90.39% in visual localization</li>
-                    <li><strong>Android World</strong>: GELab-4B significantly outperforms other open-source models with a 75.86% success rate in real Android environment tasks, demonstrating its powerful capabilities in practical applications</li>
+                    <li><strong>ScreenSpot V2</strong>: GELab-Zero-4b-preview achieved 93.00%, approaching top-tier model performance in screen element recognition</li>
+                    <li><strong>OSworld-G</strong>: GELab-Zero-4b-preview obtained the best result of 68.04% in general operating system environment task execution</li>
+                    <li><strong>ScreenSpot-Pro</strong>: GELab-Zero-4b-preview reached 60.51% in complex scenario element localization</li>
+                    <li><strong>MMBench-GUI</strong>: GELab-Zero-4b-preview leads with 85.81% in GUI multi-modal understanding capability</li>
+                    <li><strong>VisualWebBench-Grounding</strong>: GELab-Zero-4b-preview achieved excellent performance at 90.39% in visual localization</li>
+                    <li><strong>Android World</strong>: GELab-Zero-4b-preview significantly outperforms other open-source models with a 75.86% success rate in real Android environment tasks, demonstrating its powerful capabilities in practical applications</li>
                 </ul>
                 <p class="summary-conclusion">
-                    Overall, GELab-4B demonstrates exceptional performance across multiple open-source benchmarks, particularly excelling in real mobile scenarios (Android World), proving its strong capabilities in real-world applications.
+                    Overall, GELab-Zero-4b-preview demonstrates exceptional performance across multiple open-source benchmarks, particularly excelling in real mobile scenarios (Android World), proving its strong capabilities in real-world applications.
                 </p>
             </div>
         </div>
