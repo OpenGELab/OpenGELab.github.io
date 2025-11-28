@@ -1963,7 +1963,7 @@ body {
 /* Open Benchmark Grid Styles */
 .open-benchmark-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin: 3rem 0;
 }
@@ -1972,6 +1972,15 @@ body {
     background: #ffffff;
     border-radius: 12px;
     padding: 1.5rem 1rem;
+}
+
+/* Center the 4th and 5th items in the second row */
+.open-benchmark-item:nth-child(4) {
+    grid-column: 1 / 2;
+}
+
+.open-benchmark-item:nth-child(5) {
+    grid-column: 3 / 4;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
     border: 1px solid rgba(0, 0, 0, 0.05);
 }
