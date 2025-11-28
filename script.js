@@ -239,7 +239,7 @@ const animateModernBars = () => {
     bars.forEach(bar => observer.observe(bar));
 };
 
-// Adjust and animate Open Benchmark bars (Height-based with Dynamic Baseline)
+// Adjust and animate Open Benchmark bars (Height-based with Dynamic Baseline and Value-Based Scaling)
 const animateOpenBenchmarkBars = () => {
     // Process each benchmark group separately to calculate local baselines
     const benchmarkGroups = document.querySelectorAll('.open-benchmark-bars');
@@ -248,17 +248,21 @@ const animateOpenBenchmarkBars = () => {
         const bars = group.querySelectorAll('.open-bar');
         if (bars.length === 0) return;
 
-        // 1. Extract values and find min/max for this group
+        // 1. Extract values and find min/max for this group based on TEXT CONTENT
         let minVal = Infinity;
         let maxVal = -Infinity;
         const barValues = [];
 
         bars.forEach(bar => {
-            // Get value from inline height style (assumed to be the data source)
-            const hStr = bar.style.height;
+            // Get value from the .open-bar-value span text
+            const valueSpan = bar.querySelector('.open-bar-value');
             let val = 0;
-            if (hStr && hStr.includes('px')) {
-                val = parseFloat(hStr);
+            if (valueSpan) {
+                // Parse text content (e.g. "62.10" -> 62.10)
+                const textVal = parseFloat(valueSpan.textContent.trim());
+                if (!isNaN(textVal)) {
+                    val = textVal;
+                }
             }
             barValues.push({ element: bar, value: val });
             
@@ -267,12 +271,29 @@ const animateOpenBenchmarkBars = () => {
         });
 
         // 2. Determine baseline (start point) to exaggerate differences
-        // We set baseline slightly below the minimum value to ensure the smallest bar is visible but short
-        // Ensure baseline doesn't make bars negative. 
-        // If minVal is 50, baseline 40. Diff = 10.
-        // If minVal is small, careful not to go < 0.
-        const BASELINE_OFFSET = 15; // The smallest bar will appear as if it has this value relative to baseline
-        let baseline = Math.max(0, minVal - BASELINE_OFFSET);
+        // Dynamic baseline strategy: 
+        // We want the shortest bar to be roughly 1/4 of the max height to show a significant "drop".
+        // height_min / height_max = offset / (range + offset) = 1/4
+        // => 4 * offset = range + offset => 3 * offset = range => offset = range / 3
+        const range = maxVal - minVal;
+        
+        // Default offset for single-value or zero-range cases
+        let offset = 10; 
+        
+        if (range > 0) {
+            offset = range / 3;
+        } else if (minVal > 0) {
+             // If all values are equal and > 0, show them as full height or substantial
+             offset = minVal / 2;
+        }
+
+        // Ensure a minimum visual presence (e.g. don't let offset be practically 0 if range is tiny but values are large)
+        // Actually, if range is 0.1 and val is 100. Offset = 0.033. Baseline = 99.967.
+        // Min bar = 0.033. Max bar = 0.133. Ratio 1:4. 
+        // It works mathematically for relative scaling, but we need to ensure the text doesn't look weird if bar is tiny.
+        // The bar text is absolute positioned above, so bar height just needs to be visible.
+        
+        let baseline = Math.max(0, minVal - offset);
 
         // 3. Calculate scaling factor to fit the container height
         // Target max height in pixels (container is ~320px, leave room for text)
