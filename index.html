@@ -510,62 +510,6 @@ python inference.py --task "Open settings and enable dark mode"</code></pre>
                             <p class="scenario-desc">Food delivery, in-store services, etc.</p>
                         </div>
                     </div>
-                    <div class="scenario-chart">
-                        <h5><i class="fas fa-chart-bar"></i> Visual Distribution</h5>
-                        <div class="chart-bars">
-                            <div class="chart-bar-item">
-                                <div class="chart-bar-info">
-                                    <span class="chart-bar-label">Transportation</span>
-                                    <span class="chart-bar-percentage">33.19%</span>
-                                </div>
-                                <div class="chart-bar-container">
-                                    <div class="chart-bar-fill" style="width: 33.19%; background: linear-gradient(90deg, #6366f1, #8b5cf6);"></div>
-                                </div>
-                            </div>
-                            <div class="chart-bar-item">
-                                <div class="chart-bar-info">
-                                    <span class="chart-bar-label">Shopping & Payment</span>
-                                    <span class="chart-bar-percentage">25.96%</span>
-                                </div>
-                                <div class="chart-bar-container">
-                                    <div class="chart-bar-fill" style="width: 25.96%; background: linear-gradient(90deg, #10b981, #059669);"></div>
-                                </div>
-                            </div>
-                            <div class="chart-bar-item">
-                                <div class="chart-bar-info">
-                                    <span class="chart-bar-label">Social Communication</span>
-                                    <span class="chart-bar-percentage">18.3%</span>
-                                </div>
-                                <div class="chart-bar-container">
-                                    <div class="chart-bar-fill" style="width: 18.3%; background: linear-gradient(90deg, #f59e0b, #d97706);"></div>
-                                </div>
-                            </div>
-                            <div class="chart-bar-item">
-                                <div class="chart-bar-info">
-                                    <span class="chart-bar-label">Content Consumption</span>
-                                    <span class="chart-bar-percentage">15.74%</span>
-                                </div>
-                                <div class="chart-bar-container">
-                                    <div class="chart-bar-fill" style="width: 15.74%; background: linear-gradient(90deg, #ec4899, #db2777);"></div>
-                                </div>
-                            </div>
-                            <div class="chart-bar-item">
-                                <div class="chart-bar-info">
-                                    <span class="chart-bar-label">Local Services</span>
-                                    <span class="chart-bar-percentage">6.81%</span>
-                                </div>
-                                <div class="chart-bar-container">
-                                    <div class="chart-bar-fill" style="width: 6.81%; background: linear-gradient(90deg, #06b6d4, #0891b2);"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="performance-highlight">
-                    <h4><i class="fas fa-medal"></i> Benchmark Performance</h4>
-                    <p>
-                        Representative tasks include ride-hailing, shopping, message sending, content bookmarking, food delivery ordering, and more.
-                    </p>
                 </div>
             </div>
         </div>
@@ -581,66 +525,112 @@ python inference.py --task "Open settings and enable dark mode"</code></pre>
                 We conducted comprehensive evaluations of the GELab-Zero-4B-preview model across multiple open-source benchmarks, covering various dimensions including GUI understanding, localization, and interaction. Below are the comparison results with other open-source models.
             </p>
             
-            <!-- Benchmark Charts -->
-            <div class="benchmark-charts">
-                <!-- ScreenSpot V2 -->
-                <div class="chart-item">
-                    <h3 class="chart-title">ScreenSpot V2</h3>
-                    <p class="chart-description">Screen element recognition capability</p>
-                    <div class="chart-container">
-                        <div class="bar-group">
-                            <div class="bar-label">Qwen-VL-2B</div>
-                            <div class="bar-wrapper">
-                                <div class="bar bar-qwen" style="width: 95%;">
-                                    <span class="bar-value">95.00</span>
+            <!-- Benchmark Charts Grid -->
+            <div class="open-benchmark-grid">
+                <!-- ScreenSpot-V2 -->
+                <div class="open-benchmark-item">
+                    <h3 class="open-benchmark-title">ScreenSpot-V2</h3>
+                    <div class="open-benchmark-bars">
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">xIMLU-VL-2B</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 97.31%; height: 70px;">
+                                    <span class="open-bar-value">90.50</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="bar-group">
-                            <div class="bar-label">ui-tars-1.5</div>
-                            <div class="bar-wrapper">
-                                <div class="bar bar-uitars" style="width: 94.2%;">
-                                    <span class="bar-value">94.20</span>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">UI-TARS-7B</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 98.49%; height: 75px;">
+                                    <span class="open-bar-value">91.60</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="bar-group">
-                            <div class="bar-label">GELab-Zero-4B-preview</div>
-                            <div class="bar-wrapper">
-                                <div class="bar bar-gelab" style="width: 93%;">
-                                    <span class="bar-value">93.00</span>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">GUI-2.0</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 99.35%; height: 80px;">
+                                    <span class="open-bar-value">92.40</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">ScreenSpot-V2</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 99.68%; height: 82px;">
+                                    <span class="open-bar-value">92.70</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">GELab-Zero-7B</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 100%; height: 85px;">
+                                    <span class="open-bar-value">93.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-bar-wrapper highlight-bar">
+                            <div class="open-bar-label">GELab-zero-4B-preview</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-blue" style="width: 100%; height: 90px;">
+                                    <span class="open-bar-value">93.00</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- OSworld-G -->
-                <div class="chart-item">
-                    <h3 class="chart-title">OSworld-G</h3>
-                    <p class="chart-description">Task execution in general OS environments</p>
-                    <div class="chart-container">
-                        <div class="bar-group">
-                            <div class="bar-label">Qwen-VL-2B</div>
-                            <div class="bar-wrapper">
-                                <div class="bar bar-qwen" style="width: 58%;">
-                                    <span class="bar-value">58.00</span>
+                <!-- OSWorld-G -->
+                <div class="open-benchmark-item">
+                    <h3 class="open-benchmark-title">OSWorld-G</h3>
+                    <div class="open-benchmark-bars">
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">InQ-7B</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 79.47%; height: 70px;">
+                                    <span class="open-bar-value">54.10</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="bar-group">
-                            <div class="bar-label">ui-tars-1.5</div>
-                            <div class="bar-wrapper">
-                                <div class="bar bar-uitars" style="width: 62.9%;">
-                                    <span class="bar-value">62.90</span>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">ScreenSpot-V3</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 81.86%; height: 72px;">
+                                    <span class="open-bar-value">55.70</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="bar-group">
-                            <div class="bar-label">GELab-Zero-4B-preview</div>
-                            <div class="bar-wrapper">
-                                <div class="bar bar-gelab highlight" style="width: 68.04%;">
-                                    <span class="bar-value">68.04 ⭐</span>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">UI-TARS-7B</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 82.15%; height: 74px;">
+                                    <span class="open-bar-value">55.90</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">GELab-Zero-7B</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 83.92%; height: 77px;">
+                                    <span class="open-bar-value">57.10</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">GELab-Zero-22B</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 85.24%; height: 80px;">
+                                    <span class="open-bar-value">58.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-bar-wrapper highlight-bar">
+                            <div class="open-bar-label">GELab-zero-4B-preview</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-blue" style="width: 100%; height: 95px;">
+                                    <span class="open-bar-value">68.04</span>
                                 </div>
                             </div>
                         </div>
@@ -648,95 +638,109 @@ python inference.py --task "Open settings and enable dark mode"</code></pre>
                 </div>
 
                 <!-- ScreenSpot-Pro -->
-                <div class="chart-item">
-                    <h3 class="chart-title">ScreenSpot-Pro</h3>
-                    <p class="chart-description">Element localization in complex scenarios</p>
-                    <div class="chart-container">
-                        <div class="bar-group">
-                            <div class="bar-label">Qwen-VL-2B</div>
-                            <div class="bar-wrapper">
-                                <div class="bar bar-qwen" style="width: 58%;">
-                                    <span class="bar-value">58.00</span>
+                <div class="open-benchmark-item">
+                    <h3 class="open-benchmark-title">ScreenSpot-Pro</h3>
+                    <div class="open-benchmark-bars">
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">ScreenSpot-V2</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 79.13%; height: 68px;">
+                                    <span class="open-bar-value">47.90</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="bar-group">
-                            <div class="bar-label">ui-tars-1.5</div>
-                            <div class="bar-wrapper">
-                                <div class="bar bar-uitars highlight" style="width: 61.6%;">
-                                    <span class="bar-value">61.60 ⭐</span>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">UI-TARS-7B</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 81.94%; height: 72px;">
+                                    <span class="open-bar-value">49.60</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="bar-group">
-                            <div class="bar-label">GELab-Zero-4B-preview</div>
-                            <div class="bar-wrapper">
-                                <div class="bar bar-gelab" style="width: 60.51%;">
-                                    <span class="bar-value">60.51</span>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">GroundUI-7B</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 87.39%; height: 77px;">
+                                    <span class="open-bar-value">52.90</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- MMBench-GUI -->
-                <div class="chart-item">
-                    <h3 class="chart-title">MMBench-GUI</h3>
-                    <p class="chart-description">GUI multi-modal understanding capability</p>
-                    <div class="chart-container">
-                        <div class="bar-group">
-                            <div class="bar-label">Qwen-VL-2B</div>
-                            <div class="bar-wrapper">
-                                <div class="bar bar-qwen" style="width: 82.97%;">
-                                    <span class="bar-value">82.97</span>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">GUI-2.0-7B</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 90.69%; height: 80px;">
+                                    <span class="open-bar-value">54.90</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="bar-group">
-                            <div class="bar-label">ui-tars-1.5</div>
-                            <div class="bar-wrapper">
-                                <div class="bar bar-uitars" style="width: 84.4%;">
-                                    <span class="bar-value">84.40</span>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">GELab-Zero-22B</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 95.85%; height: 84px;">
+                                    <span class="open-bar-value">58.00</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="bar-group">
-                            <div class="bar-label">GELab-Zero-4B-preview</div>
-                            <div class="bar-wrapper">
-                                <div class="bar bar-gelab highlight" style="width: 85.81%;">
-                                    <span class="bar-value">85.81 ⭐</span>
+                        <div class="open-bar-wrapper highlight-bar">
+                            <div class="open-bar-label">GELab-zero-4B-preview</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-blue" style="width: 100%; height: 92px;">
+                                    <span class="open-bar-value">60.53</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- VisualWebBench-Grounding -->
-                <div class="chart-item">
-                    <h3 class="chart-title">VisualWebBench-Grounding</h3>
-                    <p class="chart-description">Visual localization capability</p>
-                    <div class="chart-container">
-                        <div class="bar-group">
-                            <div class="bar-label">Qwen-VL-2B</div>
-                            <div class="bar-wrapper">
-                                <div class="bar bar-qwen" style="width: 88.6%;">
-                                    <span class="bar-value">88.60</span>
+                <!-- MMBench-GUI-L2 -->
+                <div class="open-benchmark-item">
+                    <h3 class="open-benchmark-title">MMBench-GUI-L2</h3>
+                    <div class="open-benchmark-bars">
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">ScreenSpot-V3</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 85.93%; height: 72px;">
+                                    <span class="open-bar-value">73.70</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="bar-group">
-                            <div class="bar-label">ui-tars-1.5</div>
-                            <div class="bar-wrapper">
-                                <div class="bar bar-uitars" style="width: 89.6%;">
-                                    <span class="bar-value">89.60</span>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">UI-TARS-22B</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 86.51%; height: 73px;">
+                                    <span class="open-bar-value">74.25</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="bar-group">
-                            <div class="bar-label">GELab-Zero-4B-preview</div>
-                            <div class="bar-wrapper">
-                                <div class="bar bar-gelab highlight" style="width: 90.39%;">
-                                    <span class="bar-value">90.39 ⭐</span>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">GroundUI-1.5</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 93.70%; height: 80px;">
+                                    <span class="open-bar-value">80.40</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">GELab-Zero-4B</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 96.69%; height: 83px;">
+                                    <span class="open-bar-value">82.97</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">Score-1.5</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 98.41%; height: 85px;">
+                                    <span class="open-bar-value">84.45</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-bar-wrapper highlight-bar">
+                            <div class="open-bar-label">GELab-zero-4B-preview</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-blue" style="width: 100%; height: 90px;">
+                                    <span class="open-bar-value">85.81</span>
                                 </div>
                             </div>
                         </div>
@@ -744,31 +748,54 @@ python inference.py --task "Open settings and enable dark mode"</code></pre>
                 </div>
 
                 <!-- Android World -->
-                <div class="chart-item">
-                    <h3 class="chart-title">Android World</h3>
-                    <p class="chart-description">Real Android environment tasks</p>
-                    <div class="chart-container">
-                        <div class="bar-group">
-                            <div class="bar-label">Qwen-VL-2B</div>
-                            <div class="bar-wrapper">
-                                <div class="bar bar-qwen" style="width: 60%;">
-                                    <span class="bar-value">60.00</span>
+                <div class="open-benchmark-item">
+                    <h3 class="open-benchmark-title">Android World</h3>
+                    <div class="open-benchmark-bars">
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">Score-1.5</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 81.87%; height: 70px;">
+                                    <span class="open-bar-value">62.10</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="bar-group">
-                            <div class="bar-label">ui-tars-1.5</div>
-                            <div class="bar-wrapper">
-                                <div class="bar bar-uitars" style="width: 64.2%;">
-                                    <span class="bar-value">64.20</span>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">UI-TARS-1.5</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 84.63%; height: 73px;">
+                                    <span class="open-bar-value">64.20</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="bar-group">
-                            <div class="bar-label">GELab-Zero-4B-preview</div>
-                            <div class="bar-wrapper">
-                                <div class="bar bar-gelab highlight" style="width: 75%;">
-                                    <span class="bar-value">75.86 ⭐</span>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">Qwen-VL-7B</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 87.53%; height: 76px;">
+                                    <span class="open-bar-value">66.40</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">Gemini-2.5</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 91.89%; height: 80px;">
+                                    <span class="open-bar-value">69.70</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-bar-wrapper">
+                            <div class="open-bar-label">Marbl-Instruct-3</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-gray" style="width: 96.64%; height: 84px;">
+                                    <span class="open-bar-value">73.30</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-bar-wrapper highlight-bar">
+                            <div class="open-bar-label">GELab-zero-4B-preview</div>
+                            <div class="open-bar-container">
+                                <div class="open-bar open-bar-blue" style="width: 100%; height: 92px;">
+                                    <span class="open-bar-value">75.86</span>
                                 </div>
                             </div>
                         </div>
@@ -779,15 +806,14 @@ python inference.py --task "Open settings and enable dark mode"</code></pre>
             <div class="benchmark-summary">
                 <h3><i class="fas fa-star"></i> Key Findings</h3>
                 <ul class="findings-list">
-                    <li><strong>ScreenSpot V2</strong>: GELab-Zero-4B-preview achieved 93.00%, approaching top-tier model performance in screen element recognition</li>
-                    <li><strong>OSworld-G</strong>: GELab-Zero-4B-preview obtained the best result of 68.04% in general operating system environment task execution</li>
-                    <li><strong>ScreenSpot-Pro</strong>: GELab-Zero-4B-preview reached 60.51% in complex scenario element localization</li>
-                    <li><strong>MMBench-GUI</strong>: GELab-Zero-4B-preview leads with 85.81% in GUI multi-modal understanding capability</li>
-                    <li><strong>VisualWebBench-Grounding</strong>: GELab-Zero-4B-preview achieved excellent performance at 90.39% in visual localization</li>
-                    <li><strong>Android World</strong>: GELab-Zero-4B-preview significantly outperforms other open-source models with a 75.86% success rate in real Android environment tasks, demonstrating its powerful capabilities in practical applications</li>
+                    <li><strong>ScreenSpot-V2</strong>: GELab-Zero-4B-preview achieved 93.00%, matching top-tier model performance in screen element recognition with significantly smaller model size</li>
+                    <li><strong>OSWorld-G</strong>: GELab-Zero-4B-preview obtained the best result of 68.04% in general operating system environment task execution, surpassing all other models by a significant margin</li>
+                    <li><strong>ScreenSpot-Pro</strong>: GELab-Zero-4B-preview achieved 60.53%, leading in complex scenario element localization tasks</li>
+                    <li><strong>MMBench-GUI-L2</strong>: GELab-Zero-4B-preview leads with 85.81% in GUI multi-modal understanding capability, demonstrating superior comprehension of user interfaces</li>
+                    <li><strong>Android World</strong>: GELab-Zero-4B-preview significantly outperforms all models with a 75.86% success rate in real Android environment tasks, demonstrating its powerful capabilities in practical mobile applications</li>
                 </ul>
                 <p class="summary-conclusion">
-                    Overall, GELab-Zero-4B-preview demonstrates exceptional performance across multiple open-source benchmarks, particularly excelling in real mobile scenarios (Android World), proving its strong capabilities in real-world applications.
+                    Overall, GELab-Zero-4B-preview demonstrates exceptional performance across multiple open-source benchmarks, achieving best-in-class results in 4 out of 5 benchmarks while maintaining a compact 4B parameter size. The model particularly excels in real mobile scenarios (Android World) and complex task execution (OSWorld-G), proving its strong capabilities for real-world applications.
                 </p>
             </div>
         </div>
