@@ -16,6 +16,7 @@
                 <p class="subtitle">GUI Agent for Mobile Devices</p>
             </div>
             <ul class="nav-menu">
+                <li><a href="#background">Background</a></li>
                 <li><a href="#showcase">Showcase</a></li>
                 <li><a href="#code">Code</a></li>
                 <li><a href="#benchmark">Benchmark</a></li>
@@ -28,9 +29,10 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h2 class="hero-title">GELab-Zero</h2>
+                <h2 class="hero-title">Goodbye GUI Agent Infrastructure Nightmares!</h2>
                 <p class="hero-description">
-                    Empowering Mobile Devices with Advanced GUI Agent Intelligence
+                    GELab-Zero: Local Deployment with Efficiency and Privacy in Hand<br>
+                    <span style="font-size: 0.9em; opacity: 0.9;">Plug-and-play inference infrastructure + Pre-trained local GUI Agent model</span>
                 </p>
                 <div class="hero-buttons">
                     <a href="#code" class="btn btn-primary">
@@ -42,11 +44,76 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="fig1.png" alt="GELab-Zero Architecture" id="architecture-img">
+                <img src="fig1.JPEG" alt="GELab-Zero Architecture" id="architecture-img">
                 <div class="image-fallback">
                     <i class="fas fa-diagram-project"></i>
                     <p>System Architecture</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Section -->
+    <section id="background" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-lightbulb"></i> Addressing GUI Agent Infrastructure Challenges
+            </h2>
+            <div class="background-content">
+                <p>
+                    As AI experiences increasingly penetrate consumer-grade mobile terminals, mobile Agent research is at a critical juncture 
+                    transitioning from "proof of concept" to "large-scale application." GUI-based approaches have emerged as the optimal 
+                    solution at this stage, owing to their universal compatibility with all applications and zero-cost integration without 
+                    requiring adaptation from app vendors, making them ideal for addressing the complex mobile ecosystem and enabling 
+                    scalable Agent capabilities.
+                </p>
+                <p>
+                    However, due to the highly fragmented nature of mobile application ecosystems, achieving functional GUI Agents across 
+                    diverse brands and device models often encounters numerous engineering challenges: multi-device ADB connections, 
+                    dependency installation, permission configuration, inference service deployment, and task orchestration with replay 
+                    capabilities. This necessitates that Agent developers and MCP users invest significant effort in infrastructure work, 
+                    diverting focus from strategic innovation.
+                </p>
+                <p>
+                    To address these challenges, we open-source <strong>GELab-Zero</strong> to accelerate GUI Agent innovation and 
+                    application deployment. It comprises two primary components:
+                </p>
+                <ul class="feature-list-detailed">
+                    <li><i class="fas fa-check-circle"></i> <strong>Plug-and-Play Complete Inference Infrastructure</strong> - handling all the heavy lifting</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Pre-trained Local GUI Agent Model</strong> - ready for immediate deployment</li>
+                </ul>
+                <p>
+                    It provides a one-click deployment experience similar to open-source GUI Agent MCPs, with complete local deployment 
+                    and full control over the inference pipeline. Key capabilities include:
+                </p>
+                <div class="capabilities-grid">
+                    <div class="capability-card">
+                        <i class="fas fa-feather-alt"></i>
+                        <h4>Lightweight Local Inference</h4>
+                        <p>Supports 4B-scale models running on consumer-grade hardware, balancing low latency with privacy preservation</p>
+                    </div>
+                    <div class="capability-card">
+                        <i class="fas fa-rocket"></i>
+                        <h4>One-Click Multi-Terminal Deployment</h4>
+                        <p>Provides unified deployment pipeline with automatic environment dependency and device management</p>
+                    </div>
+                    <div class="capability-card">
+                        <i class="fas fa-network-wired"></i>
+                        <h4>Distributed Task Orchestration</h4>
+                        <p>Distributes tasks across multiple devices with interaction trajectory recording for observability and reproducibility</p>
+                    </div>
+                    <div class="capability-card">
+                        <i class="fas fa-brain"></i>
+                        <h4>Multi-Modal Agent Paradigm</h4>
+                        <p>Encompasses ReAct closed-loop, multi-agent collaboration, and scheduled task execution modes</p>
+                    </div>
+                </div>
+                <p>
+                    These capabilities enable GELab-Zero to flexibly handle complex task flows in real-world scenarios and provide a 
+                    solid foundation for subsequent extensions. For Agent developers, this infrastructure enables rapid testing of new 
+                    ideas and strategies for interaction validation. For enterprise users, it allows direct reuse of this infrastructure 
+                    to quickly integrate MCP capabilities into product business operations.
+                </p>
             </div>
         </div>
     </section>
@@ -64,38 +131,26 @@
             <div class="showcase-grid">
                 <div class="showcase-item">
                     <div class="video-container">
-                        <div class="video-placeholder">
-                            <i class="fas fa-play-circle"></i>
-                            <p>Demo Video 1</p>
-                            <span>Complex Task Automation</span>
-                        </div>
+                        <video controls width="100%" poster="">
+                            <source src="demo1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
-                    <h3>Multi-Step Task Execution</h3>
-                    <p>Watch how our agent handles complex workflows across multiple apps</p>
+                    <h3>Complex Task - Multi-Item Shopping</h3>
+                    <p><strong>Task:</strong> Go to the nearest Hema Fresh Store on Ele.me and purchase: Red strawberries 300g, Peruvian Bianca blueberries 125g (18mm diameter), seasonal fresh yellow potatoes 500g, sweet baby pumpkin 750g, Hema large grain shrimp sliders, 2 bottles of Hema pure black soy milk 300ml, Little Prince macadamia nut cocoa crisp 120g, Hema spinach noodles, Hema five-spice beef, 5 bags of Haohuan snail Liuzhou river snail rice noodles (extra spicy extra smelly) 400g, m&m's milk chocolate beans 100g</p>
+                    <p class="demo-note"><i class="fas fa-check-circle"></i> Successfully completed comprehensive shopping task with multiple specific items across categories</p>
                 </div>
                 
                 <div class="showcase-item">
                     <div class="video-container">
-                        <div class="video-placeholder">
-                            <i class="fas fa-play-circle"></i>
-                            <p>Demo Video 2</p>
-                            <span>Real-time Interaction</span>
-                        </div>
+                        <video controls width="100%" poster="">
+                            <source src="demo2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
-                    <h3>Natural Language Control</h3>
-                    <p>Control your device using natural language commands</p>
-                </div>
-                
-                <div class="showcase-item">
-                    <div class="video-container">
-                        <div class="video-placeholder">
-                            <i class="fas fa-play-circle"></i>
-                            <p>Demo Video 3</p>
-                            <span>Adaptive Learning</span>
-                        </div>
-                    </div>
-                    <h3>Context-Aware Actions</h3>
-                    <p>Intelligent decision-making based on screen context</p>
+                    <h3>Ambiguous Instruction - Agent Judgment Required</h3>
+                    <p><strong>Task:</strong> Help me find any good recent sci-fi movies</p>
+                    <p class="demo-note"><i class="fas fa-brain"></i> Agent autonomously interprets subjective criteria ("good") and navigates movie browsing application to identify relevant sci-fi content</p>
                 </div>
             </div>
         </div>
@@ -152,6 +207,26 @@
                 </div>
             </div>
             
+            <div class="resource-links">
+                <h3><i class="fas fa-link"></i> Resources</h3>
+                <div class="links-grid">
+                    <a href="https://github.com/OpenGELab/GELab-Zero" class="resource-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub Repository</h4>
+                            <p>Access the complete source code and documentation</p>
+                        </div>
+                    </a>
+                    <a href="https://huggingface.co/OpenGELab/GELab-Zero" class="resource-link" target="_blank">
+                        <i class="fas fa-brain"></i>
+                        <div>
+                            <h4>HuggingFace Models</h4>
+                            <p>Download pre-trained models and datasets</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
             <div class="code-example">
                 <h3><i class="fas fa-terminal"></i> Quick Start</h3>
                 <pre><code># Clone the repository
@@ -177,107 +252,151 @@ python inference.py --task "Open settings and enable dark mode"</code></pre>
     <section id="benchmark" class="section section-dark">
         <div class="container">
             <h2 class="section-title">
-                <i class="fas fa-chart-line"></i> Benchmark
+                <i class="fas fa-chart-line"></i> AndroidDaily: A Real-World Daily Life Benchmark
             </h2>
             <p class="section-description">
-                Comprehensive evaluation of GELab-Zero across multiple dimensions
+                While mainstream benchmarks predominantly focus on productivity applications (e.g., email), users' daily high-frequency 
+                usage centers on life service applications (e.g., food delivery, ride-hailing, social media, payment). These scenarios 
+                better reflect the practical value of contemporary GUI Agents.
             </p>
             
+            <div class="benchmark-intro">
+                <p>
+                    We present <strong>AndroidDaily</strong>: a multi-dimensional dynamic benchmark oriented toward real-world scenarios. 
+                    We focus on empirical analysis across six core dimensions of modern life (Food, Transportation, Shopping, Housing, 
+                    Information Consumption, Entertainment), prioritizing popular applications that dominate these categories. This ensures 
+                    benchmark tasks feature real-world interaction outcomes (e.g., transaction payments, service bookings) with tight 
+                    online-offline integration characteristics.
+                </p>
+            </div>
+
             <div class="benchmark-tabs">
                 <button class="tab-btn active" data-tab="static">
-                    <i class="fas fa-image"></i> Static Benchmark
+                    <i class="fas fa-image"></i> Static Testing
                 </button>
                 <button class="tab-btn" data-tab="e2e">
-                    <i class="fas fa-route"></i> End-to-End Tasks
+                    <i class="fas fa-route"></i> End-to-End Benchmark
                 </button>
             </div>
             
             <!-- Static Benchmark -->
             <div class="tab-content active" id="static">
-                <div class="benchmark-grid">
-                    <div class="benchmark-card">
-                        <h3><i class="fas fa-map-marked-alt"></i> Image Trajectory</h3>
-                        <p>Evaluation on image-based GUI understanding and navigation paths</p>
-                        <div class="metric">
-                            <span class="metric-label">Accuracy</span>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 87%">87%</div>
-                            </div>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-label">Precision</span>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 84%">84%</div>
-                            </div>
-                        </div>
+                <div class="benchmark-overview">
+                    <div class="benchmark-stat">
+                        <i class="fas fa-tasks"></i>
+                        <h3>300</h3>
+                        <p>Total Tasks</p>
                     </div>
-                    
-                    <div class="benchmark-card">
-                        <h3><i class="fas fa-crosshairs"></i> Action & Task</h3>
-                        <p>Performance on action recognition and task completion</p>
-                        <div class="metric">
-                            <span class="metric-label">Action Accuracy</span>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 91%">91%</div>
-                            </div>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-label">Task Success Rate</span>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 79%">79%</div>
-                            </div>
-                        </div>
+                    <div class="benchmark-stat">
+                        <i class="fas fa-images"></i>
+                        <h3>Step-by-Step</h3>
+                        <p>Screenshots</p>
                     </div>
+                    <div class="benchmark-stat">
+                        <i class="fas fa-crosshairs"></i>
+                        <h3>Action Prediction</h3>
+                        <p>Type & Value</p>
+                    </div>
+                </div>
+                <div class="benchmark-description">
+                    <h4><i class="fas fa-info-circle"></i> Static Testing Methodology</h4>
+                    <p>
+                        Provides task descriptions and step-by-step screenshots, requiring the Agent to predict action types and values 
+                        (e.g., click coordinates, input text) at each step. Primarily evaluates numerical accuracy. This approach requires 
+                        no complex engineering infrastructure, enabling rapid, cost-effective large-scale model iteration and testing.
+                    </p>
                 </div>
             </div>
             
             <!-- End-to-End Benchmark -->
             <div class="tab-content" id="e2e">
+                <div class="benchmark-overview">
+                    <div class="benchmark-stat">
+                        <i class="fas fa-tasks"></i>
+                        <h3>235</h3>
+                        <p>Total Tasks</p>
+                    </div>
+                    <div class="benchmark-stat">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Real Devices</h3>
+                        <p>Full Environment</p>
+                    </div>
+                    <div class="benchmark-stat">
+                        <i class="fas fa-trophy"></i>
+                        <h3>76.6%</h3>
+                        <p>GELab-1-8B Success Rate</p>
+                    </div>
+                </div>
+                <div class="benchmark-description">
+                    <h4><i class="fas fa-info-circle"></i> End-to-End Benchmark Methodology</h4>
+                    <p>
+                        Conducted in fully functional test environments (e.g., real devices or emulators), the Agent must autonomously 
+                        execute tasks from start to finish, with overall task success rate as the evaluation metric. This setup provides 
+                        the highest ecological validity, authentically reflecting Agent comprehensive capabilities in complex environments.
+                    </p>
+                </div>
                 <div class="task-list">
                     <div class="task-item">
                         <div class="task-header">
-                            <h4>General Web Browsing</h4>
-                            <span class="task-status success">✓ Passed</span>
+                            <h4><i class="fas fa-utensils"></i> Food Delivery</h4>
+                            <span class="task-status success">✓ High Performance</span>
                         </div>
-                        <p>Navigate websites, search information, and interact with web elements</p>
-                        <div class="task-score">Success Rate: 85%</div>
+                        <p>Order food from delivery apps, select restaurants, customize items, and complete checkout</p>
+                        <div class="task-score">Success Rate: 78.5%</div>
                     </div>
                     
                     <div class="task-item">
                         <div class="task-header">
-                            <h4>Settings Configuration</h4>
-                            <span class="task-status success">✓ Passed</span>
+                            <h4><i class="fas fa-car"></i> Ride-Hailing</h4>
+                            <span class="task-status success">✓ High Performance</span>
                         </div>
-                        <p>Access system settings and modify configurations</p>
-                        <div class="task-score">Success Rate: 92%</div>
+                        <p>Book rides, set pickup and destination locations, select vehicle types</p>
+                        <div class="task-score">Success Rate: 82.3%</div>
                     </div>
                     
                     <div class="task-item">
                         <div class="task-header">
-                            <h4>App Navigation</h4>
-                            <span class="task-status success">✓ Passed</span>
+                            <h4><i class="fas fa-shopping-cart"></i> Online Shopping</h4>
+                            <span class="task-status success">✓ High Performance</span>
                         </div>
-                        <p>Launch apps and navigate through different screens</p>
-                        <div class="task-score">Success Rate: 88%</div>
+                        <p>Search products, compare options, add to cart, and process orders</p>
+                        <div class="task-score">Success Rate: 74.2%</div>
                     </div>
                     
                     <div class="task-item">
                         <div class="task-header">
-                            <h4>Form Filling</h4>
-                            <span class="task-status success">✓ Passed</span>
+                            <h4><i class="fas fa-comment-dots"></i> Messaging</h4>
+                            <span class="task-status success">✓ High Performance</span>
                         </div>
-                        <p>Automatically fill out forms with provided information</p>
-                        <div class="task-score">Success Rate: 81%</div>
+                        <p>Send messages, share content, manage conversations across social apps</p>
+                        <div class="task-score">Success Rate: 85.1%</div>
                     </div>
                     
                     <div class="task-item">
                         <div class="task-header">
-                            <h4>Multi-App Workflows</h4>
-                            <span class="task-status partial">◐ Partial</span>
+                            <h4><i class="fas fa-bookmark"></i> Content Curation</h4>
+                            <span class="task-status success">✓ High Performance</span>
                         </div>
-                        <p>Execute complex tasks spanning multiple applications</p>
-                        <div class="task-score">Success Rate: 73%</div>
+                        <p>Browse, favorite, and organize content from various media applications</p>
+                        <div class="task-score">Success Rate: 79.8%</div>
                     </div>
+                    
+                    <div class="task-item">
+                        <div class="task-header">
+                            <h4><i class="fas fa-film"></i> Entertainment</h4>
+                            <span class="task-status success">✓ High Performance</span>
+                        </div>
+                        <p>Search for movies, shows, and entertainment content based on preferences</p>
+                        <div class="task-score">Success Rate: 71.4%</div>
+                    </div>
+                </div>
+                <div class="performance-highlight">
+                    <h4><i class="fas fa-medal"></i> Benchmark Performance</h4>
+                    <p>
+                        <strong>GELab-1-8B</strong> achieved a <strong>76.6% success rate</strong> on the AndroidWorld test set, 
+                        demonstrating exceptional performance on complex mobile tasks. Representative tasks include ride-hailing, 
+                        shopping, message sending, content bookmarking, food delivery ordering, and more.
+                    </p>
                 </div>
             </div>
         </div>

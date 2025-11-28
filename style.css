@@ -99,6 +99,7 @@ body {
     font-weight: 800;
     margin-bottom: 1rem;
     background: linear-gradient(135deg, #fff 0%, var(--primary-color) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -341,6 +342,59 @@ body {
 .feature-list i {
     color: var(--accent-color);
     font-size: 0.9rem;
+}
+
+.resource-links {
+    margin-bottom: 2rem;
+}
+
+.resource-links h3 {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.resource-link {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: #fff;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.resource-link:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.resource-link i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.resource-link h4 {
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+    font-size: 1.2rem;
+}
+
+.resource-link p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 .code-example {
@@ -603,6 +657,186 @@ body {
     font-weight: bold;
     position: absolute;
     left: -1.5rem;
+}
+
+/* Background Section */
+.background-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.background-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+.feature-list-detailed {
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.feature-list-detailed li {
+    padding: 0.75rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+.feature-list-detailed i {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.capability-card {
+    background: var(--light-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border-left: 4px solid var(--primary-color);
+    transition: all 0.3s;
+}
+
+.capability-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.capability-card i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.capability-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.capability-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Video Styles */
+.video-container video {
+    width: 100%;
+    border-radius: 8px;
+    background: #000;
+}
+
+.demo-note {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background: rgba(99, 102, 241, 0.1);
+    border-left: 3px solid var(--primary-color);
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.demo-note i {
+    margin-right: 0.5rem;
+}
+
+/* Benchmark Specific Styles */
+.benchmark-intro {
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.benchmark-intro p {
+    color: var(--text-light);
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.benchmark-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.benchmark-stat {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid var(--primary-color);
+}
+
+.benchmark-stat i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.benchmark-stat h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.benchmark-stat p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.benchmark-description {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.benchmark-description h4 {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+}
+
+.benchmark-description p {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.performance-highlight {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 2rem;
+    border: 2px solid var(--primary-color);
+}
+
+.performance-highlight h4 {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+}
+
+.performance-highlight p {
+    color: var(--text-light);
+    line-height: 1.8;
+    font-size: 1.05rem;
 }
 
 /* Footer */
