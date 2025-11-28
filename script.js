@@ -154,6 +154,65 @@ window.addEventListener('scroll', () => {
     });
 });
 
+// Animate benchmark chart bars
+const animateBenchmarkBars = () => {
+    const bars = document.querySelectorAll('.bar');
+    
+    const barObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                const bar = entry.target;
+                const targetWidth = bar.style.width;
+                bar.style.width = '0%';
+                
+                setTimeout(() => {
+                    bar.style.width = targetWidth;
+                }, index * 100);
+                
+                barObserver.unobserve(bar);
+            }
+        });
+    }, {
+        threshold: 0.5,
+        rootMargin: '0px 0px -50px 0px'
+    });
+    
+    bars.forEach(bar => {
+        barObserver.observe(bar);
+    });
+};
+
+// Animate chart items on scroll
+const animateChartItems = () => {
+    const chartItems = document.querySelectorAll('.chart-item');
+    
+    const chartObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+    
+    chartItems.forEach((item, index) => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(30px)';
+        item.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+        chartObserver.observe(item);
+    });
+};
+
+// Initialize chart animations on page load
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        animateBenchmarkBars();
+        animateChartItems();
+    }, 300);
+});
+
 // Console easter egg
 console.log(`
 %c
