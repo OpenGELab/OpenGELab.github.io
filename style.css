@@ -1976,8 +1976,9 @@ body {
 
 /* Open Benchmark Grid Styles */
 .open-benchmark-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
     margin: 3rem 0;
 }
@@ -1986,21 +1987,15 @@ body {
     background: #ffffff;
     border-radius: 12px;
     padding: 1.5rem 1rem;
-    grid-column: span 2; /* Default: 3 items per row */
+    flex: 0 1 380px;
+    min-width: 300px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Make the 4th and 5th items span half width each to center them on the second row */
-.open-benchmark-item:nth-child(4),
-.open-benchmark-item:nth-child(5) {
-    grid-column: span 3; /* 2 items per row */
-}
-
-/* Remove the old max-width restriction */
-.open-benchmark-item:nth-child(4) .open-benchmark-bars,
-.open-benchmark-item:nth-child(5) .open-benchmark-bars {
-    max-width: 100%;
-    margin: 0 auto;
-    height: 240px;
+.open-benchmark-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .open-benchmark-title {
@@ -2024,13 +2019,13 @@ body {
 }
 
 .open-bar-wrapper {
-    flex: 0 0 auto;
-    width: 60px;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     gap: 0.3rem;
+    max-width: 60px;
 }
 
 .open-bar-wrapper.highlight-bar {
@@ -2039,6 +2034,7 @@ body {
 
 .open-bar-container {
     width: 100%;
+    height: 100%; /* Ensure container takes height so bar can grow within it? No, bar height is absolute/pixel based from data */
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -2051,8 +2047,9 @@ body {
     justify-content: center;
     padding: 0.3rem 0.2rem;
     border-radius: 4px 4px 0 0;
-    transition: all 0.3s ease;
+    transition: height 1.5s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.3s ease, filter 0.3s ease;
     position: relative;
+    transform-origin: bottom;
 }
 
 .open-bar-gray {
@@ -2099,28 +2096,10 @@ body {
 
 /* Responsive styles for open benchmark */
 @media (max-width: 1400px) {
-    .open-benchmark-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .open-benchmark-item,
-    .open-benchmark-item:nth-child(4),
-    .open-benchmark-item:nth-child(5) {
-        grid-column: auto;
-    }
+    /* Flexbox handles wrapping automatically, no need for grid columns */
 }
 
 @media (max-width: 968px) {
-    .open-benchmark-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .open-benchmark-item,
-    .open-benchmark-item:nth-child(4),
-    .open-benchmark-item:nth-child(5) {
-        grid-column: auto;
-    }
-    
     .open-benchmark-title {
         font-size: 0.95rem;
     }
@@ -2128,17 +2107,12 @@ body {
 
 @media (max-width: 768px) {
     .open-benchmark-grid {
-        grid-template-columns: 1fr;
         gap: 1.5rem;
     }
     
     .open-benchmark-item {
-        padding: 1.5rem;
-    }
-    
-    .open-benchmark-item:nth-child(4),
-    .open-benchmark-item:nth-child(5) {
-        grid-column: 1;
+        padding: 1rem;
+        flex-basis: 100%; /* Full width on mobile */
     }
     
     .open-benchmark-bars {
@@ -2147,7 +2121,8 @@ body {
     }
     
     .open-bar-wrapper {
-        width: 50px;
+        max-width: none; /* Allow flexibility or keep it constrained? */
+        width: 16%; /* Distribute evenly */
     }
     
     .open-bar-value {

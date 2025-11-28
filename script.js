@@ -205,11 +205,47 @@ const animateChartItems = () => {
     });
 };
 
+// Animate Open Benchmark bars
+const animateOpenBenchmarkBars = () => {
+    const openBars = document.querySelectorAll('.open-bar');
+    
+    // Store target height and set initial height to 0
+    openBars.forEach(bar => {
+        const height = bar.style.height;
+        if (height) {
+            bar.setAttribute('data-height', height);
+            bar.style.height = '0px';
+        }
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const bar = entry.target;
+                const targetHeight = bar.getAttribute('data-height');
+                
+                // Add a small random delay for a more natural effect or rely on CSS transition
+                // Using a slight delay to ensure the browser has rendered the 0 height frame
+                requestAnimationFrame(() => {
+                    bar.style.height = targetHeight;
+                });
+                
+                observer.unobserve(bar);
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    openBars.forEach(bar => observer.observe(bar));
+};
+
 // Initialize chart animations on page load
 window.addEventListener('load', () => {
     setTimeout(() => {
         animateBenchmarkBars();
         animateChartItems();
+        animateOpenBenchmarkBars();
     }, 300);
 });
 
