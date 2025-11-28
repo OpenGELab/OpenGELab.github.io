@@ -1979,7 +1979,7 @@ body {
 /* Open Benchmark Grid Styles */
 .open-benchmark-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 2rem;
     margin: 3rem 0;
 }
@@ -1988,17 +1988,19 @@ body {
     background: #ffffff;
     border-radius: 12px;
     padding: 1.5rem 1rem;
+    grid-column: span 2; /* Default: 3 items per row */
 }
 
-/* Make the 4th and 5th items span full width */
+/* Make the 4th and 5th items span half width each to center them on the second row */
 .open-benchmark-item:nth-child(4),
 .open-benchmark-item:nth-child(5) {
-    grid-column: 1 / -1;
+    grid-column: span 3; /* 2 items per row */
 }
 
+/* Remove the old max-width restriction */
 .open-benchmark-item:nth-child(4) .open-benchmark-bars,
 .open-benchmark-item:nth-child(5) .open-benchmark-bars {
-    max-width: 700px;
+    max-width: 100%;
     margin: 0 auto;
     height: 240px;
 }
@@ -2100,18 +2102,25 @@ body {
 /* Responsive styles for open benchmark */
 @media (max-width: 1400px) {
     .open-benchmark-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .open-benchmark-item,
+    .open-benchmark-item:nth-child(4),
+    .open-benchmark-item:nth-child(5) {
+        grid-column: auto;
     }
 }
 
 @media (max-width: 968px) {
     .open-benchmark-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
     
+    .open-benchmark-item,
     .open-benchmark-item:nth-child(4),
     .open-benchmark-item:nth-child(5) {
-        grid-column: 1 / -1;
+        grid-column: auto;
     }
     
     .open-benchmark-title {
