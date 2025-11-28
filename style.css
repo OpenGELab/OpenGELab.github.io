@@ -239,7 +239,7 @@ body {
 .showcase-item {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
-    padding: 1.5rem;
+    padding: 1rem;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -284,13 +284,15 @@ body {
 }
 
 .showcase-item h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
     color: #fff;
 }
 
 .showcase-item p {
     color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.4;
 }
 
 /* Code Section */
@@ -1988,15 +1990,17 @@ body {
     padding: 1.5rem 1rem;
 }
 
-/* Center the 4th and 5th items in the second row */
-.open-benchmark-item:nth-child(4) {
-    grid-column: 1 / 2;
+/* Make the 4th and 5th items span full width */
+.open-benchmark-item:nth-child(4),
+.open-benchmark-item:nth-child(5) {
+    grid-column: 1 / -1;
 }
 
-.open-benchmark-item:nth-child(5) {
-    grid-column: 2 / 3;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+.open-benchmark-item:nth-child(4) .open-benchmark-bars,
+.open-benchmark-item:nth-child(5) .open-benchmark-bars {
+    max-width: 700px;
+    margin: 0 auto;
+    height: 240px;
 }
 
 .open-benchmark-title {
@@ -2012,15 +2016,16 @@ body {
 .open-benchmark-bars {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
-    gap: 0.5rem;
+    gap: 0.8rem;
     height: 200px;
     padding: 0.5rem 0;
 }
 
 .open-bar-wrapper {
-    flex: 1;
+    flex: 0 0 auto;
+    width: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2080,7 +2085,7 @@ body {
     max-width: 100%;
     word-wrap: break-word;
     line-height: 1.2;
-    height: 2.4em;
+    min-height: 3.6em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2104,6 +2109,11 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
     
+    .open-benchmark-item:nth-child(4),
+    .open-benchmark-item:nth-child(5) {
+        grid-column: 1 / -1;
+    }
+    
     .open-benchmark-title {
         font-size: 0.95rem;
     }
@@ -2119,9 +2129,18 @@ body {
         padding: 1.5rem;
     }
     
+    .open-benchmark-item:nth-child(4),
+    .open-benchmark-item:nth-child(5) {
+        grid-column: 1;
+    }
+    
     .open-benchmark-bars {
         height: 180px;
         gap: 0.4rem;
+    }
+    
+    .open-bar-wrapper {
+        width: 50px;
     }
     
     .open-bar-value {
