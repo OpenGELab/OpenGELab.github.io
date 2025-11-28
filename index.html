@@ -16,11 +16,11 @@
                 <p class="subtitle">GUI Agent for Mobile Devices</p>
             </div>
             <ul class="nav-menu">
+                <li><a href="#performance">Open Benchmark</a></li>
                 <li><a href="#background">Background</a></li>
                 <li><a href="#showcase">Showcase</a></li>
                 <li><a href="#code">Code</a></li>
                 <li><a href="#AndroidDaily">AndroidDaily</a></li>
-                <li><a href="#performance">Open Benchmark</a></li>
             </ul>
         </div>
     </nav>
@@ -48,6 +48,300 @@
                     <i class="fas fa-diagram-project"></i>
                     <p>System Architecture</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Benchmark Section -->
+    <section id="performance" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-trophy"></i> Open Benchmark
+            </h2>
+            <p class="section-description">
+                We conducted comprehensive evaluations of the GELab-Zero-4B-preview model across multiple open-source benchmarks, covering various dimensions including GUI understanding, localization, and interaction. Below are the comparison results with other open-source models.
+            </p>
+            <!-- Benchmark Charts Wrapper -->
+            <div class="benchmark-scroll-container">
+                <div class="open-benchmark-grid" id="openBenchmarkGrid">
+                    <!-- Android World -->
+                    <div class="open-benchmark-item">
+                        <h3 class="open-benchmark-title">Android World</h3>
+                        <div class="open-benchmark-bars">
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 70px;">
+                                        <span class="open-bar-value">62.10</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">Score-1.5</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 73px;">
+                                        <span class="open-bar-value">64.20</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">UI-TARS-1.5</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 76px;">
+                                        <span class="open-bar-value">66.40</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">Qwen-VL-7B</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 80px;">
+                                        <span class="open-bar-value">69.70</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">Gemini-2.5</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 84px;">
+                                        <span class="open-bar-value">73.30</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">Marbl-Instruct-3</div>
+                            </div>
+                            <div class="open-bar-wrapper highlight-bar">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-blue" style="height: 92px;">
+                                        <span class="open-bar-value">75.86</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">GELab-zero-4B-preview</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- ScreenSpot-V2 -->
+                    <div class="open-benchmark-item">
+                        <h3 class="open-benchmark-title">ScreenSpot-V2</h3>
+                        <div class="open-benchmark-bars">
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 70px;">
+                                        <span class="open-bar-value">90.50</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">xIMLU-VL-2B</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 75px;">
+                                        <span class="open-bar-value">91.60</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">UI-TARS-7B</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 80px;">
+                                        <span class="open-bar-value">92.40</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">GUI-2.0</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 82px;">
+                                        <span class="open-bar-value">92.70</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">ScreenSpot-V2</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 85px;">
+                                        <span class="open-bar-value">93.00</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">GELab-Zero-7B</div>
+                            </div>
+                            <div class="open-bar-wrapper highlight-bar">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-blue" style="height: 90px;">
+                                        <span class="open-bar-value">93.00</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">GELab-zero-4B-preview</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- OSWorld-G -->
+                    <div class="open-benchmark-item">
+                        <h3 class="open-benchmark-title">OSWorld-G</h3>
+                        <div class="open-benchmark-bars">
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 70px;">
+                                        <span class="open-bar-value">54.10</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">InQ-7B</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 72px;">
+                                        <span class="open-bar-value">55.70</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">ScreenSpot-V3</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 74px;">
+                                        <span class="open-bar-value">55.90</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">UI-TARS-7B</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 77px;">
+                                        <span class="open-bar-value">57.10</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">GELab-Zero-7B</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 80px;">
+                                        <span class="open-bar-value">58.00</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">GELab-Zero-22B</div>
+                            </div>
+                            <div class="open-bar-wrapper highlight-bar">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-blue" style="height: 95px;">
+                                        <span class="open-bar-value">68.04</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">GELab-zero-4B-preview</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- ScreenSpot-Pro -->
+                    <div class="open-benchmark-item">
+                        <h3 class="open-benchmark-title">ScreenSpot-Pro</h3>
+                        <div class="open-benchmark-bars">
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 68px;">
+                                        <span class="open-bar-value">47.90</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">ScreenSpot-V2</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 72px;">
+                                        <span class="open-bar-value">49.60</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">UI-TARS-7B</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 77px;">
+                                        <span class="open-bar-value">52.90</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">GroundUI-7B</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 80px;">
+                                        <span class="open-bar-value">54.90</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">GUI-2.0-7B</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 84px;">
+                                        <span class="open-bar-value">58.00</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">GELab-Zero-22B</div>
+                            </div>
+                            <div class="open-bar-wrapper highlight-bar">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-blue" style="height: 92px;">
+                                        <span class="open-bar-value">60.53</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">GELab-zero-4B-preview</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- MMBench-GUI-L2 -->
+                    <div class="open-benchmark-item">
+                        <h3 class="open-benchmark-title">MMBench-GUI-L2</h3>
+                        <div class="open-benchmark-bars">
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 72px;">
+                                        <span class="open-bar-value">73.70</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">ScreenSpot-V3</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 73px;">
+                                        <span class="open-bar-value">74.25</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">UI-TARS-22B</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 80px;">
+                                        <span class="open-bar-value">80.40</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">GroundUI-1.5</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 83px;">
+                                        <span class="open-bar-value">82.97</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">GELab-Zero-4B</div>
+                            </div>
+                            <div class="open-bar-wrapper">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-gray" style="height: 85px;">
+                                        <span class="open-bar-value">84.45</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">Score-1.5</div>
+                            </div>
+                            <div class="open-bar-wrapper highlight-bar">
+                                <div class="open-bar-container">
+                                    <div class="open-bar open-bar-blue" style="height: 90px;">
+                                        <span class="open-bar-value">85.81</span>
+                                    </div>
+                                </div>
+                                <div class="open-bar-label">GELab-zero-4B-preview</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="scroll-right-btn" id="scrollRightBtn" aria-label="Scroll Right">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -129,40 +423,46 @@
             
             <div class="showcase-grid">
                 <div class="showcase-item">
+                    <div class="showcase-text">
+                        <h3>Complex Task - Multi-Item Shopping</h3>
+                        <p><strong>Task:</strong> Go to the nearest Hema Fresh Store on Ele.me and purchase: Red strawberries 300g, Peruvian Bianca blueberries 125g (18mm diameter), seasonal fresh yellow potatoes 500g, sweet baby pumpkin 750g, Hema large grain shrimp sliders, 2 bottles of Hema pure black soy milk 300ml, Little Prince macadamia nut cocoa crisp 120g, Hema spinach noodles, Hema five-spice beef, 5 bags of Haohuan snail Liuzhou river snail rice noodles (extra spicy extra smelly) 400g, m&m's milk chocolate beans 100g</p>
+                        <p class="demo-note"><i class="fas fa-check-circle"></i> Successfully completed comprehensive shopping task with multiple specific items across categories</p>
+                    </div>
                     <div class="video-container">
                         <video controls width="100%" poster="">
                             <source src="demo1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <h3>Complex Task - Multi-Item Shopping</h3>
-                    <p><strong>Task:</strong> Go to the nearest Hema Fresh Store on Ele.me and purchase: Red strawberries 300g, Peruvian Bianca blueberries 125g (18mm diameter), seasonal fresh yellow potatoes 500g, sweet baby pumpkin 750g, Hema large grain shrimp sliders, 2 bottles of Hema pure black soy milk 300ml, Little Prince macadamia nut cocoa crisp 120g, Hema spinach noodles, Hema five-spice beef, 5 bags of Haohuan snail Liuzhou river snail rice noodles (extra spicy extra smelly) 400g, m&m's milk chocolate beans 100g</p>
-                    <p class="demo-note"><i class="fas fa-check-circle"></i> Successfully completed comprehensive shopping task with multiple specific items across categories</p>
                 </div>
                 
                 <div class="showcase-item">
+                    <div class="showcase-text">
+                        <h3>Ambiguous Instruction - Agent Judgment Required</h3>
+                        <p><strong>Task:</strong> Help me find any good recent sci-fi movies</p>
+                        <p class="demo-note"><i class="fas fa-brain"></i> Agent autonomously interprets subjective criteria ("good") and navigates movie browsing application to identify relevant sci-fi content</p>
+                    </div>
                     <div class="video-container">
                         <video controls width="100%" poster="">
                             <source src="demo2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <h3>Ambiguous Instruction - Agent Judgment Required</h3>
-                    <p><strong>Task:</strong> Help me find any good recent sci-fi movies</p>
-                    <p class="demo-note"><i class="fas fa-brain"></i> Agent autonomously interprets subjective criteria ("good") and navigates movie browsing application to identify relevant sci-fi content</p>
                 </div>
                 
                 
                 <div class="showcase-item">
+                    <div class="showcase-text">
+                        <h3>Personalized Recommendation - Agent-Driven Recommendation</h3>
+                        <p><strong>Task:</strong> Help me find a place where I can take my kids on the weekend</p>
+                        <p class="demo-note"><i class="fas fa-lightbulb"></i> Agent autonomously analyzes family-friendly activities and provides personalized recommendations</p>
+                    </div>
                     <div class="video-container">
                         <video controls width="100%" poster="">
                             <source src="3656ec14-df17-43b4-a19c-0635bdae6fc6.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <h3>Personalized Recommendation - Agent-Driven Recommendation</h3>
-                    <p><strong>Task:</strong> Help me find a place where I can take my kids on the weekend</p>
-                    <p class="demo-note"><i class="fas fa-lightbulb"></i> Agent autonomously analyzes family-friendly activities and provides personalized recommendations</p>
                 </div>
             </div>
         </div>
@@ -399,30 +699,18 @@ python inference.py --task "Open settings and enable dark mode"</code></pre>
                     <!-- Simplified Comparison Chart -->
                     <div class="comparison-chart-modern">
                         <div class="comparison-bars-modern">
-                            <div class="comparison-bar-item-modern">
+                            <div class="comparison-bar-item-modern champion-bar-modern">
                                 <div class="model-info-modern">
-                                    <span class="model-name-modern"><i class="fas fa-robot"></i> GPT-4o</span>
-                                    <span class="model-accuracy-modern">19.6%</span>
+                                    <span class="model-name-modern"><i class="fas fa-crown"></i> GELab-Zero-4B-preview</span>
+                                    <span class="model-accuracy-modern champion-accuracy">73.4%</span>
                                 </div>
                                 <div class="comparison-bar-bg-modern">
-                                    <div class="comparison-bar-fill-modern" style="width: 26.7%; background: linear-gradient(90deg, #94a3b8, #64748b);">
-                                        <span class="bar-label-inside">0.196</span>
+                                    <div class="comparison-bar-fill-modern champion-fill-modern" style="width: 100%; background: linear-gradient(90deg, #10b981, #059669);">
+                                        <span class="bar-label-inside">0.734</span>
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div class="comparison-bar-item-modern">
-                                <div class="model-info-modern">
-                                    <span class="model-name-modern"><i class="fas fa-brain"></i> Gemini-2.5-pro-thinking</span>
-                                    <span class="model-accuracy-modern">36.6%</span>
-                                </div>
-                                <div class="comparison-bar-bg-modern">
-                                    <div class="comparison-bar-fill-modern" style="width: 49.9%; background: linear-gradient(90deg, #60a5fa, #3b82f6);">
-                                        <span class="bar-label-inside">0.366</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
+
                             <div class="comparison-bar-item-modern">
                                 <div class="model-info-modern">
                                     <span class="model-name-modern"><i class="fas fa-desktop"></i> UI-TARS-1.5</span>
@@ -434,15 +722,27 @@ python inference.py --task "Open settings and enable dark mode"</code></pre>
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div class="comparison-bar-item-modern champion-bar-modern">
+
+                            <div class="comparison-bar-item-modern">
                                 <div class="model-info-modern">
-                                    <span class="model-name-modern"><i class="fas fa-crown"></i> GELab-Zero-4B-preview</span>
-                                    <span class="model-accuracy-modern champion-accuracy">73.4%</span>
+                                    <span class="model-name-modern"><i class="fas fa-brain"></i> Gemini-2.5-pro-thinking</span>
+                                    <span class="model-accuracy-modern">36.6%</span>
                                 </div>
                                 <div class="comparison-bar-bg-modern">
-                                    <div class="comparison-bar-fill-modern champion-fill-modern" style="width: 100%; background: linear-gradient(90deg, #10b981, #059669);">
-                                        <span class="bar-label-inside">0.734</span>
+                                    <div class="comparison-bar-fill-modern" style="width: 49.9%; background: linear-gradient(90deg, #60a5fa, #3b82f6);">
+                                        <span class="bar-label-inside">0.366</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="comparison-bar-item-modern">
+                                <div class="model-info-modern">
+                                    <span class="model-name-modern"><i class="fas fa-robot"></i> GPT-4o</span>
+                                    <span class="model-accuracy-modern">19.6%</span>
+                                </div>
+                                <div class="comparison-bar-bg-modern">
+                                    <div class="comparison-bar-fill-modern" style="width: 26.7%; background: linear-gradient(90deg, #94a3b8, #64748b);">
+                                        <span class="bar-label-inside">0.196</span>
                                     </div>
                                 </div>
                             </div>
@@ -526,297 +826,6 @@ python inference.py --task "Open settings and enable dark mode"</code></pre>
             </div>
         </div>
     </section>
-
-    <!-- Open Benchmark Section -->
-    <section id="performance" class="section">
-        <div class="container">
-            <h2 class="section-title">
-                <i class="fas fa-trophy"></i> Open Benchmark
-            </h2>
-            <p class="section-description">
-                We conducted comprehensive evaluations of the GELab-Zero-4B-preview model across multiple open-source benchmarks, covering various dimensions including GUI understanding, localization, and interaction. Below are the comparison results with other open-source models.
-            </p>
-            
-            <!-- Benchmark Charts Grid -->
-            <div class="open-benchmark-grid">
-                <!-- ScreenSpot-V2 -->
-                <div class="open-benchmark-item">
-                    <h3 class="open-benchmark-title">ScreenSpot-V2</h3>
-                    <div class="open-benchmark-bars">
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 70px;">
-                                    <span class="open-bar-value">90.50</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">xIMLU-VL-2B</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 75px;">
-                                    <span class="open-bar-value">91.60</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">UI-TARS-7B</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 80px;">
-                                    <span class="open-bar-value">92.40</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">GUI-2.0</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 82px;">
-                                    <span class="open-bar-value">92.70</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">ScreenSpot-V2</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 85px;">
-                                    <span class="open-bar-value">93.00</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">GELab-Zero-7B</div>
-                        </div>
-                        <div class="open-bar-wrapper highlight-bar">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-blue" style="height: 90px;">
-                                    <span class="open-bar-value">93.00</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">GELab-zero-4B-preview</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- OSWorld-G -->
-                <div class="open-benchmark-item">
-                    <h3 class="open-benchmark-title">OSWorld-G</h3>
-                    <div class="open-benchmark-bars">
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 70px;">
-                                    <span class="open-bar-value">54.10</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">InQ-7B</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 72px;">
-                                    <span class="open-bar-value">55.70</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">ScreenSpot-V3</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 74px;">
-                                    <span class="open-bar-value">55.90</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">UI-TARS-7B</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 77px;">
-                                    <span class="open-bar-value">57.10</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">GELab-Zero-7B</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 80px;">
-                                    <span class="open-bar-value">58.00</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">GELab-Zero-22B</div>
-                        </div>
-                        <div class="open-bar-wrapper highlight-bar">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-blue" style="height: 95px;">
-                                    <span class="open-bar-value">68.04</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">GELab-zero-4B-preview</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ScreenSpot-Pro -->
-                <div class="open-benchmark-item">
-                    <h3 class="open-benchmark-title">ScreenSpot-Pro</h3>
-                    <div class="open-benchmark-bars">
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 68px;">
-                                    <span class="open-bar-value">47.90</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">ScreenSpot-V2</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 72px;">
-                                    <span class="open-bar-value">49.60</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">UI-TARS-7B</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 77px;">
-                                    <span class="open-bar-value">52.90</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">GroundUI-7B</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 80px;">
-                                    <span class="open-bar-value">54.90</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">GUI-2.0-7B</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 84px;">
-                                    <span class="open-bar-value">58.00</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">GELab-Zero-22B</div>
-                        </div>
-                        <div class="open-bar-wrapper highlight-bar">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-blue" style="height: 92px;">
-                                    <span class="open-bar-value">60.53</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">GELab-zero-4B-preview</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- MMBench-GUI-L2 -->
-                <div class="open-benchmark-item">
-                    <h3 class="open-benchmark-title">MMBench-GUI-L2</h3>
-                    <div class="open-benchmark-bars">
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 72px;">
-                                    <span class="open-bar-value">73.70</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">ScreenSpot-V3</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 73px;">
-                                    <span class="open-bar-value">74.25</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">UI-TARS-22B</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 80px;">
-                                    <span class="open-bar-value">80.40</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">GroundUI-1.5</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 83px;">
-                                    <span class="open-bar-value">82.97</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">GELab-Zero-4B</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 85px;">
-                                    <span class="open-bar-value">84.45</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">Score-1.5</div>
-                        </div>
-                        <div class="open-bar-wrapper highlight-bar">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-blue" style="height: 90px;">
-                                    <span class="open-bar-value">85.81</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">GELab-zero-4B-preview</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Android World -->
-                <div class="open-benchmark-item">
-                    <h3 class="open-benchmark-title">Android World</h3>
-                    <div class="open-benchmark-bars">
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 70px;">
-                                    <span class="open-bar-value">62.10</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">Score-1.5</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 73px;">
-                                    <span class="open-bar-value">64.20</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">UI-TARS-1.5</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 76px;">
-                                    <span class="open-bar-value">66.40</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">Qwen-VL-7B</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 80px;">
-                                    <span class="open-bar-value">69.70</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">Gemini-2.5</div>
-                        </div>
-                        <div class="open-bar-wrapper">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-gray" style="height: 84px;">
-                                    <span class="open-bar-value">73.30</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">Marbl-Instruct-3</div>
-                        </div>
-                        <div class="open-bar-wrapper highlight-bar">
-                            <div class="open-bar-container">
-                                <div class="open-bar open-bar-blue" style="height: 92px;">
-                                    <span class="open-bar-value">75.86</span>
-                                </div>
-                            </div>
-                            <div class="open-bar-label">GELab-zero-4B-preview</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
