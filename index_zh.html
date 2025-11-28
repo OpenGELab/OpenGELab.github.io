@@ -1,64 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GELab-Zero - GUI Agent for Mobile Devices</title>
+    <title>GELab-Zero - 移动设备GUI智能体</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- 导航栏 -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
                 <h1>GELab-Zero</h1>
-                <p class="subtitle">GUI Agent for Mobile Devices</p>
+                <p class="subtitle">移动设备GUI智能体</p>
             </div>
             <ul class="nav-menu">
-                <li><a href="#performance">Open Benchmark</a></li>
-                <li><a href="#background">Background</a></li>
-                <li><a href="#showcase">Showcase</a></li>
-                <li><a href="#code">Code</a></li>
+                <li><a href="#performance">开放基准测试</a></li>
+                <li><a href="#background">背景介绍</a></li>
+                <li><a href="#showcase">展示案例</a></li>
+                <li><a href="#code">代码</a></li>
                 <li><a href="#AndroidDaily">AndroidDaily</a></li>
-                <li><a href="index_zh.html" style="color: #6366f1;">中文</a></li>
+                <li><a href="index.html" style="color: #6366f1;">English</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- 主要展示区 -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h2 class="hero-title">Local-Deployable GELab-Zero-4B Masters Android Apps</h2>
+                <h2 class="hero-title">本地可部署的GELab-Zero-4B精通Android应用</h2>
                 <p class="hero-description">
-                    First complete open-source GUI Agent with model + infrastructure by StepFun. Plug-and-play engineering setup included — no cloud dependencies, full privacy control
+                    首个由阶跃星辰提供的完全开源GUI智能体，包含模型+基础设施。即插即用的工程设置——无需云端依赖，完全隐私控制
                 </p>
                 <div class="hero-buttons">
                     <a href="#code" class="btn btn-primary">
-                        <i class="fas fa-code"></i> Get Started
+                        <i class="fas fa-code"></i> 开始使用
                     </a>
                     <a href="#showcase" class="btn btn-secondary">
-                        <i class="fas fa-play"></i> Watch Demo
+                        <i class="fas fa-play"></i> 观看演示
                     </a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="fig1.JPEG" alt="GELab-Zero Architecture" id="architecture-img">
+                <img src="fig1.JPEG" alt="GELab-Zero 架构图" id="architecture-img">
             </div>
         </div>
     </section>
 
-    <!-- Open Benchmark Section -->
+    <!-- 开放基准测试区域 -->
     <section id="performance" class="section">
         <div class="container">
             <h2 class="section-title">
-                <i class="fas fa-trophy"></i> Open Benchmark
+                <i class="fas fa-trophy"></i> 开放基准测试
             </h2>
             <p class="section-description">
-                We conducted comprehensive evaluations of the GELab-Zero-4B-preview model across multiple open-source benchmarks, covering various dimensions including GUI understanding, localization, and interaction. Below are the comparison results with other open-source models.
+                我们在多个开源基准测试上对GELab-Zero-4B-preview模型进行了全面评估，涵盖GUI理解、定位和交互等多个维度。以下是与其他开源模型的对比结果。
             </p>
-            <!-- Benchmark Charts Wrapper -->
+            <!-- 基准测试图表包装器 -->
             <div class="benchmark-scroll-container">
                 <div class="open-benchmark-grid" id="openBenchmarkGrid">
                     <!-- Android World -->
@@ -336,113 +336,105 @@
                         </div>
                     </div>
                 </div>
-                <button class="scroll-right-btn" id="scrollRightBtn" aria-label="Scroll Right">
+                <button class="scroll-right-btn" id="scrollRightBtn" aria-label="向右滚动">
                     <i class="fas fa-chevron-right"></i>
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- Background Section -->
+    <!-- 背景介绍区域 -->
     <section id="background" class="section">
         <div class="container">
             <h2 class="section-title">
-                <i class="fas fa-lightbulb"></i> Addressing GUI Agent Infrastructure Challenges
+                <i class="fas fa-lightbulb"></i> 应对GUI智能体基础设施挑战
             </h2>
             <div class="background-content">
                 <p>
-                    As AI experiences increasingly penetrate consumer-grade mobile terminals, mobile Agent research is at a critical juncture 
-                    transitioning from "proof of concept" to "large-scale application." GUI-based approaches have emerged as the optimal 
-                    solution at this stage, owing to their universal compatibility with all applications and zero-cost integration without 
-                    requiring adaptation from app vendors, making them ideal for addressing the complex mobile ecosystem and enabling 
-                    scalable Agent capabilities.
+                    随着AI体验越来越多地渗透到消费级移动终端，移动智能体研究正处于从"概念验证"到"大规模应用"转型的关键时刻。
+                    基于GUI的方法已成为现阶段的最佳解决方案，因为它们与所有应用程序具有通用兼容性，无需应用供应商适配即可实现零成本集成，
+                    使其成为应对复杂移动生态系统并实现可扩展智能体能力的理想选择。
                 </p>
                 <p>
-                    However, due to the highly fragmented nature of mobile application ecosystems, achieving functional GUI Agents across 
-                    diverse brands and device models often encounters numerous engineering challenges: multi-device ADB connections, 
-                    dependency installation, permission configuration, inference service deployment, and task orchestration with replay 
-                    capabilities. This necessitates that Agent developers and MCP users invest significant effort in infrastructure work, 
-                    diverting focus from strategic innovation.
+                    然而，由于移动应用生态系统高度碎片化，在不同品牌和设备型号上实现功能性GUI智能体往往会遇到众多工程挑战：
+                    多设备ADB连接、依赖安装、权限配置、推理服务部署以及具有回放能力的任务编排。这要求智能体开发者和MCP用户在基础设施工作上
+                    投入大量精力，从而分散了战略创新的注意力。
                 </p>
                 <p>
-                    To address these challenges, we open-source <strong>GELab-Zero</strong> to accelerate GUI Agent innovation and 
-                    application deployment. It comprises two primary components:
+                    为了应对这些挑战，我们开源了<strong>GELab-Zero</strong>，以加速GUI智能体的创新和应用部署。它包含两个主要组件：
                 </p>
                 <ul class="feature-list-detailed">
-                    <li><i class="fas fa-check-circle"></i> <strong>Plug-and-Play Complete Inference Infrastructure</strong> - handling all the heavy lifting</li>
-                    <li><i class="fas fa-check-circle"></i> <strong>Pre-trained Local GUI Agent Model</strong> - ready for immediate deployment</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>即插即用的完整推理基础设施</strong> - 处理所有繁重工作</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>预训练的本地GUI智能体模型</strong> - 可立即部署</li>
                 </ul>
                 <p>
-                    It provides a one-click deployment experience similar to open-source GUI Agent MCPs, with complete local deployment 
-                    and full control over the inference pipeline. Key capabilities include:
+                    它提供类似于开源GUI智能体MCP的一键部署体验，完全本地部署并完全控制推理流程。主要功能包括：
                 </p>
                 <div class="capabilities-grid">
                     <div class="capability-card">
                         <i class="fas fa-feather-alt"></i>
-                        <h4>Lightweight Local Inference</h4>
-                        <p>Supports 4B-scale models running on consumer-grade hardware, balancing low latency with privacy preservation</p>
+                        <h4>轻量级本地推理</h4>
+                        <p>支持4B规模的模型在消费级硬件上运行，平衡低延迟与隐私保护</p>
                     </div>
                     <div class="capability-card">
                         <i class="fas fa-rocket"></i>
-                        <h4>One-Click Multi-Terminal Deployment</h4>
-                        <p>Provides unified deployment pipeline with automatic environment dependency and device management</p>
+                        <h4>一键多终端部署</h4>
+                        <p>提供统一的部署流程，自动管理环境依赖和设备</p>
                     </div>
                     <div class="capability-card">
                         <i class="fas fa-network-wired"></i>
-                        <h4>Distributed Task Orchestration</h4>
-                        <p>Distributes tasks across multiple devices with interaction trajectory recording for observability and reproducibility</p>
+                        <h4>分布式任务编排</h4>
+                        <p>在多个设备间分配任务，记录交互轨迹以实现可观察性和可重现性</p>
                     </div>
                     <div class="capability-card">
                         <i class="fas fa-brain"></i>
-                        <h4>Multi-Modal Agent Paradigm</h4>
-                        <p>Encompasses ReAct closed-loop, multi-agent collaboration, and scheduled task execution modes</p>
+                        <h4>多模态智能体范式</h4>
+                        <p>包括ReAct闭环、多智能体协作和定时任务执行模式</p>
                     </div>
                 </div>
                 <p>
-                    These capabilities enable GELab-Zero to flexibly handle complex task flows in real-world scenarios and provide a 
-                    solid foundation for subsequent extensions. For Agent developers, this infrastructure enables rapid testing of new 
-                    ideas and strategies for interaction validation. For enterprise users, it allows direct reuse of this infrastructure 
-                    to quickly integrate MCP capabilities into product business operations.
+                    这些功能使GELab-Zero能够灵活处理实际场景中的复杂任务流，并为后续扩展提供坚实基础。对于智能体开发者，
+                    这个基础设施能够快速测试新想法和交互验证策略。对于企业用户，可以直接重用此基础设施，快速将MCP能力集成到产品业务运营中。
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Showcase Section -->
+    <!-- 展示案例区域 -->
     <section id="showcase" class="section section-dark">
         <div class="container">
             <h2 class="section-title">
-                <i class="fas fa-star"></i> Showcase
+                <i class="fas fa-star"></i> 展示案例
             </h2>
             <p class="section-description">
-                Experience the power of GELab-Zero GUI Agent in action
+                体验GELab-Zero GUI智能体的强大功能
             </p>
             
             <div class="showcase-grid">
                 <div class="showcase-item">
                     <div class="showcase-text">
-                        <h3>Complex Task - Multi-Item Shopping</h3>
-                        <p><strong>Task:</strong> Go to the nearest Hema Fresh Store on Ele.me and purchase: Red strawberries 300g, Peruvian Bianca blueberries 125g (18mm diameter), seasonal fresh yellow potatoes 500g, sweet baby pumpkin 750g, Hema large grain shrimp sliders, 2 bottles of Hema pure black soy milk 300ml, Little Prince macadamia nut cocoa crisp 120g, Hema spinach noodles, Hema five-spice beef, 5 bags of Haohuan snail Liuzhou river snail rice noodles (extra spicy extra smelly) 400g, m&m's milk chocolate beans 100g</p>
-                        <p class="demo-note"><i class="fas fa-check-circle"></i> Successfully completed comprehensive shopping task with multiple specific items across categories</p>
+                        <h3>复杂任务 - 多商品购物</h3>
+                        <p><strong>任务：</strong>去饿了么最近的盒马鲜生购买：红色草莓300克、秘鲁白兰卡蓝莓125克（18毫米直径）、应季新鲜黄土豆500克、甜贝贝南瓜750克、盒马大粒虾滑、盒马纯豆浆300毫升2瓶、小王子夏威夷果可可脆120克、盒马菠菜面、盒马五香牛肉、好欢螺柳州螺蛳粉（特辣特臭）400克5袋、m&m's牛奶巧克力豆100克</p>
+                        <p class="demo-note"><i class="fas fa-check-circle"></i> 成功完成跨品类多个特定商品的综合购物任务</p>
                     </div>
                     <div class="video-container">
                         <video controls width="100%" poster="">
                             <source src="demo1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
+                            您的浏览器不支持视频标签。
                         </video>
                     </div>
                 </div>
                 
                 <div class="showcase-item">
                     <div class="showcase-text">
-                        <h3>Ambiguous Instruction - Agent Judgment Required</h3>
-                        <p><strong>Task:</strong> Help me find any good recent sci-fi movies</p>
-                        <p class="demo-note"><i class="fas fa-brain"></i> Agent autonomously interprets subjective criteria ("good") and navigates movie browsing application to identify relevant sci-fi content</p>
+                        <h3>模糊指令 - 需要智能体判断</h3>
+                        <p><strong>任务：</strong>帮我找一些最近好看的科幻电影</p>
+                        <p class="demo-note"><i class="fas fa-brain"></i> 智能体自主解释主观标准（"好看"）并浏览电影应用以识别相关科幻内容</p>
                     </div>
                     <div class="video-container">
                         <video controls width="100%" poster="">
                             <source src="demo2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
+                            您的浏览器不支持视频标签。
                         </video>
                     </div>
                 </div>
@@ -450,28 +442,28 @@
                 
                 <div class="showcase-item">
                     <div class="showcase-text">
-                        <h3>Personalized Recommendation - Agent-Driven Recommendation</h3>
-                        <p><strong>Task:</strong> Help me find a place where I can take my kids on the weekend</p>
-                        <p class="demo-note"><i class="fas fa-lightbulb"></i> Agent autonomously analyzes family-friendly activities and provides personalized recommendations</p>
+                        <h3>个性化推荐 - 智能体驱动推荐</h3>
+                        <p><strong>任务：</strong>帮我找一个周末可以带孩子去的地方</p>
+                        <p class="demo-note"><i class="fas fa-lightbulb"></i> 智能体自主分析适合家庭的活动并提供个性化推荐</p>
                     </div>
                     <div class="video-container">
                         <video controls width="100%" poster="">
                             <source src="3656ec14-df17-43b4-a19c-0635bdae6fc6.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
+                            您的浏览器不支持视频标签。
                         </video>
                     </div>
                 </div>
                 
                 <div class="showcase-item">
                     <div class="showcase-text">
-                        <h3>Practical Task - Enterprise Employee Meal Voucher</h3>
-                        <p><strong>Task:</strong> Claim meal vouchers on the enterprise welfare platform</p>
-                        <p class="demo-note"><i class="fas fa-briefcase"></i> GUI Agent executes multi-step complex tasks on enterprise welfare platform, accurately identifies screen information, finds the meal voucher redemption entry in the APP and completes the meal voucher application</p>
+                        <h3>实用任务 - 企业员工餐券</h3>
+                        <p><strong>任务：</strong>在企业福利平台领取餐券</p>
+                        <p class="demo-note"><i class="fas fa-briefcase"></i> GUI智能体在企业福利平台上执行多步骤复杂任务，准确识别屏幕信息，在APP中找到餐券兑换入口并完成餐券申请</p>
                     </div>
                     <div class="video-container">
                         <video controls width="100%" poster="">
                             <source src="3_canbu.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
+                            您的浏览器不支持视频标签。
                         </video>
                     </div>
                 </div>
@@ -479,14 +471,14 @@
         </div>
     </section>
 
-    <!-- Code & Infrastructure Section -->
+    <!-- 代码与基础设施区域 -->
     <section id="code" class="section">
         <div class="container">
             <h2 class="section-title">
-                <i class="fas fa-code"></i> Code & Infrastructure
+                <i class="fas fa-code"></i> 代码与基础设施
             </h2>
             <p class="section-description">
-                Deploy and run GUI Agent inference locally with our lightweight infrastructure
+                使用我们的轻量级基础设施在本地部署和运行GUI智能体推理
             </p>
             
             <div class="code-grid">
@@ -494,12 +486,12 @@
                     <div class="code-icon">
                         <i class="fas fa-microchip"></i>
                     </div>
-                    <h3>4B Model Deployment</h3>
-                    <p>Deploy our optimized 4B parameter model locally on your machine</p>
+                    <h3>4B模型部署</h3>
+                    <p>在您的机器上本地部署我们优化的40亿参数模型</p>
                     <ul class="feature-list">
-                        <li><i class="fas fa-check"></i> Low resource consumption</li>
-                        <li><i class="fas fa-check"></i> Fast inference speed</li>
-                        <li><i class="fas fa-check"></i> Easy setup</li>
+                        <li><i class="fas fa-check"></i> 低资源消耗</li>
+                        <li><i class="fas fa-check"></i> 快速推理速度</li>
+                        <li><i class="fas fa-check"></i> 简单设置</li>
                     </ul>
                 </div>
                 
@@ -507,12 +499,12 @@
                     <div class="code-icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
-                    <h3>Mobile Connection</h3>
-                    <p>Seamlessly connect to your mobile device for real-time GUI control</p>
+                    <h3>移动设备连接</h3>
+                    <p>无缝连接到您的移动设备进行实时GUI控制</p>
                     <ul class="feature-list">
-                        <li><i class="fas fa-check"></i> Cross-platform support</li>
-                        <li><i class="fas fa-check"></i> Low latency</li>
-                        <li><i class="fas fa-check"></i> Secure connection</li>
+                        <li><i class="fas fa-check"></i> 跨平台支持</li>
+                        <li><i class="fas fa-check"></i> 低延迟</li>
+                        <li><i class="fas fa-check"></i> 安全连接</li>
                     </ul>
                 </div>
                 
@@ -520,116 +512,114 @@
                     <div class="code-icon">
                         <i class="fas fa-brain"></i>
                     </div>
-                    <h3>Inference Engine</h3>
-                    <p>Powerful inference infrastructure for GUI understanding and action generation</p>
+                    <h3>推理引擎</h3>
+                    <p>强大的推理基础设施，用于GUI理解和动作生成</p>
                     <ul class="feature-list">
-                        <li><i class="fas fa-check"></i> Real-time processing</li>
-                        <li><i class="fas fa-check"></i> Multi-modal understanding</li>
-                        <li><i class="fas fa-check"></i> Adaptive reasoning</li>
+                        <li><i class="fas fa-check"></i> 实时处理</li>
+                        <li><i class="fas fa-check"></i> 多模态理解</li>
+                        <li><i class="fas fa-check"></i> 自适应推理</li>
                     </ul>
                 </div>
             </div>
             
             <div class="resource-links">
-                <h3><i class="fas fa-link"></i> Resources</h3>
+                <h3><i class="fas fa-link"></i> 资源链接</h3>
                 <div class="links-grid">
                     <a href="https://github.com/stepfun-ai/gelab-zero" class="resource-link" target="_blank">
                         <i class="fab fa-github"></i>
                         <div>
-                            <h4>GitHub Repository</h4>
-                            <p>Access the complete source code and documentation</p>
+                            <h4>GitHub仓库</h4>
+                            <p>访问完整的源代码和文档</p>
                         </div>
                     </a>
                     <a href="https://huggingface.co/stepfun-ai/GELab-Zero-4B-preview" class="resource-link" target="_blank">
                         <i class="fas fa-brain"></i>
                         <div>
-                            <h4>HuggingFace Models</h4>
-                            <p>Download pre-trained models and datasets</p>
+                            <h4>HuggingFace模型</h4>
+                            <p>下载预训练模型和数据集</p>
                         </div>
                     </a>
                 </div>
             </div>
 
             <div class="code-example">
-                <h3><i class="fas fa-terminal"></i> Quick Start</h3>
-                <pre><code># Clone the repository
+                <h3><i class="fas fa-terminal"></i> 快速开始</h3>
+                <pre><code># 克隆仓库
 git clone https://github.com/stepfun-ai/gelab-zero
 cd gelab-zero
 
-# Install dependencies
+# 安装依赖
 pip install -r requirements.txt
 
-# To inference a single task
+# 推理单个任务
 python examples/run_single_task.py</code></pre>
             </div>
         </div>
     </section>
 
-    <!-- AndroidDaily Section -->
+    <!-- AndroidDaily区域 -->
     <section id="AndroidDaily" class="section section-dark">
         <div class="container">
             <h2 class="section-title">
-                <i class="fas fa-chart-line"></i> AndroidDaily: A Real-World Daily Life Benchmark
+                <i class="fas fa-chart-line"></i> AndroidDaily：真实世界日常生活基准测试
             </h2>
             <p class="section-description">
-                While mainstream benchmarks predominantly focus on productivity applications (e.g., email), users' daily high-frequency 
-                usage centers on life service applications (e.g., food delivery, ride-hailing, social media, payment). These scenarios 
-                better reflect the practical value of contemporary GUI Agents.
+                主流基准测试主要关注生产力应用（如电子邮件），而用户日常高频使用集中在生活服务应用（如外卖、打车、社交媒体、支付）。
+                这些场景更好地反映了当代GUI智能体的实际价值。
             </p>
             
             <div class="benchmark-intro">
                 <p>
-                    We present <strong>AndroidDaily</strong>: a multi-dimensional dynamic benchmark oriented toward real-world scenarios. 
-                    We focus on empirical analysis across six core dimensions of modern life (Food, Transportation, Shopping, Housing, 
-                    Information Consumption, Entertainment), prioritizing popular applications that dominate these categories. This ensures 
-                    benchmark tasks feature real-world interaction outcomes (e.g., transaction payments, service bookings) with tight 
-                    online-offline integration characteristics.
+                    我们推出<strong>AndroidDaily</strong>：面向真实世界场景的多维动态基准测试。
+                    我们专注于现代生活六个核心维度（食品、交通、购物、住房、信息消费、娱乐）的实证分析，
+                    优先考虑主导这些类别的热门应用。这确保了基准测试任务具有真实世界的交互结果（如交易支付、服务预订），
+                    具有紧密的线上线下集成特征。
                 </p>
             </div>
 
             <div class="benchmark-tabs">
                 <button class="tab-btn active" data-tab="static">
-                    <i class="fas fa-image"></i> Static Testing
+                    <i class="fas fa-image"></i> 静态测试
                 </button>
                 <button class="tab-btn" data-tab="e2e">
-                    <i class="fas fa-route"></i> End-to-End Benchmark
+                    <i class="fas fa-route"></i> 端到端基准测试
                 </button>
             </div>
             
-            <!-- Static Benchmark -->
+            <!-- 静态基准测试 -->
             <div class="tab-content active" id="static">
                 <div class="benchmark-overview">
                     <div class="benchmark-stat">
                         <i class="fas fa-tasks"></i>
                         <h3>3146</h3>
-                        <p>Total Actions</p>
+                        <p>总操作数</p>
                     </div>
                     <div class="benchmark-stat">
                         <i class="fas fa-images"></i>
-                        <h3>Step-by-Step</h3>
-                        <p>Screenshots</p>
+                        <h3>逐步</h3>
+                        <p>截图</p>
                     </div>
                     <div class="benchmark-stat">
                         <i class="fas fa-crosshairs"></i>
-                        <h3>Action Prediction</h3>
-                        <p>Type & Value</p>
+                        <h3>动作预测</h3>
+                        <p>类型和值</p>
                     </div>
                 </div>
                 <div class="benchmark-description">
-                    <h4><i class="fas fa-info-circle"></i> Static Testing Methodology</h4>
+                    <h4><i class="fas fa-info-circle"></i> 静态测试方法</h4>
                     <p>
-                        Contains 3146 actions. Provides task descriptions and step-by-step screenshots, requiring the Agent to predict action types and values 
-                        (e.g., click coordinates, input text) at each step. Primarily evaluates numerical accuracy. This approach requires 
-                        no complex engineering infrastructure, enabling rapid, cost-effective large-scale model iteration and testing.
+                        包含3146个操作。提供任务描述和逐步截图，要求智能体预测每一步的动作类型和值
+                        （如点击坐标、输入文本）。主要评估数值准确性。这种方法不需要复杂的工程基础设施，
+                        能够快速、经济高效地进行大规模模型迭代和测试。
                     </p>
                 </div>
                 <div class="action-distribution">
-                    <h4><i class="fas fa-chart-pie"></i> Action Type Distribution in Static Testing (Total 3146 Actions)</h4>
+                    <h4><i class="fas fa-chart-pie"></i> 静态测试中的动作类型分布（总计3146个操作）</h4>
                     <div class="action-chart-modern">
                         <div class="chart-bars-compact">
                             <div class="chart-bar-item-modern">
                                 <div class="chart-bar-info-modern">
-                                    <span class="chart-bar-label-modern"><i class="fas fa-mouse-pointer"></i> CLICK</span>
+                                    <span class="chart-bar-label-modern"><i class="fas fa-mouse-pointer"></i> 点击</span>
                                     <span class="chart-bar-value-modern">1354 <span class="bar-percentage-text">(43.0%)</span></span>
                                 </div>
                                 <div class="chart-bar-container-modern">
@@ -638,7 +628,7 @@ python examples/run_single_task.py</code></pre>
                             </div>
                             <div class="chart-bar-item-modern">
                                 <div class="chart-bar-info-modern">
-                                    <span class="chart-bar-label-modern"><i class="fas fa-power-off"></i> AWAKE</span>
+                                    <span class="chart-bar-label-modern"><i class="fas fa-power-off"></i> 唤醒</span>
                                     <span class="chart-bar-value-modern">528 <span class="bar-percentage-text">(16.8%)</span></span>
                                 </div>
                                 <div class="chart-bar-container-modern">
@@ -647,7 +637,7 @@ python examples/run_single_task.py</code></pre>
                             </div>
                             <div class="chart-bar-item-modern">
                                 <div class="chart-bar-info-modern">
-                                    <span class="chart-bar-label-modern"><i class="fas fa-check-circle"></i> COMPLETE</span>
+                                    <span class="chart-bar-label-modern"><i class="fas fa-check-circle"></i> 完成</span>
                                     <span class="chart-bar-value-modern">410 <span class="bar-percentage-text">(13.0%)</span></span>
                                 </div>
                                 <div class="chart-bar-container-modern">
@@ -656,7 +646,7 @@ python examples/run_single_task.py</code></pre>
                             </div>
                             <div class="chart-bar-item-modern">
                                 <div class="chart-bar-info-modern">
-                                    <span class="chart-bar-label-modern"><i class="fas fa-keyboard"></i> TYPE</span>
+                                    <span class="chart-bar-label-modern"><i class="fas fa-keyboard"></i> 输入</span>
                                     <span class="chart-bar-value-modern">371 <span class="bar-percentage-text">(11.8%)</span></span>
                                 </div>
                                 <div class="chart-bar-container-modern">
@@ -665,7 +655,7 @@ python examples/run_single_task.py</code></pre>
                             </div>
                             <div class="chart-bar-item-modern">
                                 <div class="chart-bar-info-modern">
-                                    <span class="chart-bar-label-modern"><i class="fas fa-info-circle"></i> INFO</span>
+                                    <span class="chart-bar-label-modern"><i class="fas fa-info-circle"></i> 信息</span>
                                     <span class="chart-bar-value-modern">305 <span class="bar-percentage-text">(9.7%)</span></span>
                                 </div>
                                 <div class="chart-bar-container-modern">
@@ -674,7 +664,7 @@ python examples/run_single_task.py</code></pre>
                             </div>
                             <div class="chart-bar-item-modern">
                                 <div class="chart-bar-info-modern">
-                                    <span class="chart-bar-label-modern"><i class="fas fa-hand-point-up"></i> SLIDE</span>
+                                    <span class="chart-bar-label-modern"><i class="fas fa-hand-point-up"></i> 滑动</span>
                                     <span class="chart-bar-value-modern">93 <span class="bar-percentage-text">(3.0%)</span></span>
                                 </div>
                                 <div class="chart-bar-container-modern">
@@ -683,7 +673,7 @@ python examples/run_single_task.py</code></pre>
                             </div>
                             <div class="chart-bar-item-modern">
                                 <div class="chart-bar-info-modern">
-                                    <span class="chart-bar-label-modern"><i class="fas fa-clock"></i> WAIT</span>
+                                    <span class="chart-bar-label-modern"><i class="fas fa-clock"></i> 等待</span>
                                     <span class="chart-bar-value-modern">85 <span class="bar-percentage-text">(2.7%)</span></span>
                                 </div>
                                 <div class="chart-bar-container-modern">
@@ -694,14 +684,14 @@ python examples/run_single_task.py</code></pre>
                     </div>
                 </div>
 
-                <!-- Static Benchmark Results -->
+                <!-- 静态基准测试结果 -->
                 <div class="benchmark-results">
-                    <h4><i class="fas fa-award"></i> AndroidDaily Static Benchmark Results</h4>
+                    <h4><i class="fas fa-award"></i> AndroidDaily静态基准测试结果</h4>
                     <p class="benchmark-intro-text">
-                        Comparison of model accuracy on the AndroidDaily static benchmark. GELab-Zero-4B-preview demonstrates exceptional performance with 73.4% accuracy, significantly outperforming other state-of-the-art models.
+                        AndroidDaily静态基准测试中模型准确率的对比。GELab-Zero-4B-preview表现出色，准确率达到73.4%，显著优于其他最先进的模型。
                     </p>
                     
-                    <!-- Simplified Comparison Chart -->
+                    <!-- 简化的对比图表 -->
                     <div class="comparison-chart-modern">
                         <div class="comparison-bars-modern">
                             <div class="comparison-bar-item-modern champion-bar-modern">
@@ -757,97 +747,96 @@ python examples/run_single_task.py</code></pre>
                     <div class="benchmark-highlights">
                         <div class="highlight-item">
                             <i class="fas fa-chart-line"></i>
-                            <p><strong>+26.4%</strong> improvement over UI-TARS-1.5</p>
+                            <p>比UI-TARS-1.5提升<strong>+26.4%</strong></p>
                         </div>
                         <div class="highlight-item">
                             <i class="fas fa-percentage"></i>
-                            <p><strong>3.7x</strong> better than GPT-4o</p>
+                            <p>比GPT-4o好<strong>3.7倍</strong></p>
                         </div>
                         <div class="highlight-item">
                             <i class="fas fa-trophy"></i>
-                            <p><strong>#1</strong> on AndroidDaily Static Benchmark</p>
+                            <p>AndroidDaily静态基准测试<strong>第一名</strong></p>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <!-- End-to-End Benchmark -->
+            <!-- 端到端基准测试 -->
             <div class="tab-content" id="e2e">
                 <div class="benchmark-overview">
                     <div class="benchmark-stat">
                         <i class="fas fa-tasks"></i>
                         <h3>235</h3>
-                        <p>Total Tasks</p>
+                        <p>总任务数</p>
                     </div>
                     <div class="benchmark-stat">
                         <i class="fas fa-mobile-alt"></i>
-                        <h3>Real Devices</h3>
-                        <p>Full Environment</p>
+                        <h3>真实设备</h3>
+                        <p>完整环境</p>
                     </div>
                 </div>
                 <div class="benchmark-description">
-                    <h4><i class="fas fa-info-circle"></i> End-to-End Benchmark Methodology</h4>
+                    <h4><i class="fas fa-info-circle"></i> 端到端基准测试方法</h4>
                     <p>
-                        Conducted in fully functional test environments (e.g., real devices or emulators), the Agent must autonomously 
-                        execute tasks from start to finish, with overall task success rate as the evaluation metric. This setup provides 
-                        the highest ecological validity, authentically reflecting Agent comprehensive capabilities in complex environments.
+                        在功能完整的测试环境（如真实设备或模拟器）中进行，智能体必须自主从头到尾执行任务，
+                        以整体任务成功率作为评估指标。这种设置提供了最高的生态有效性，真实地反映了智能体在复杂环境中的综合能力。
                     </p>
                 </div>
                 <div class="scenario-distribution">
-                    <h4><i class="fas fa-chart-pie"></i> Scenario Distribution in End-to-End Benchmark</h4>
+                    <h4><i class="fas fa-chart-pie"></i> 端到端基准测试中的场景分布</h4>
                     <div class="scenario-stats-grid">
                         <div class="scenario-stat-card">
                             <i class="fas fa-car"></i>
-                            <h5>Transportation</h5>
-                            <p class="scenario-count">78 tasks (33.19%)</p>
-                            <p class="scenario-desc">Ride-hailing, navigation, public transportation, etc.</p>
+                            <h5>交通出行</h5>
+                            <p class="scenario-count">78个任务 (33.19%)</p>
+                            <p class="scenario-desc">打车、导航、公共交通等</p>
                         </div>
                         <div class="scenario-stat-card">
                             <i class="fas fa-shopping-cart"></i>
-                            <h5>Shopping & Payment</h5>
-                            <p class="scenario-count">61 tasks (25.96%)</p>
-                            <p class="scenario-desc">E-commerce shopping, payment, order management, etc.</p>
+                            <h5>购物与支付</h5>
+                            <p class="scenario-count">61个任务 (25.96%)</p>
+                            <p class="scenario-desc">电商购物、支付、订单管理等</p>
                         </div>
                         <div class="scenario-stat-card">
                             <i class="fas fa-comment-dots"></i>
-                            <h5>Social Communication</h5>
-                            <p class="scenario-count">43 tasks (18.3%)</p>
-                            <p class="scenario-desc">Message sending, social interactions, etc.</p>
+                            <h5>社交通讯</h5>
+                            <p class="scenario-count">43个任务 (18.3%)</p>
+                            <p class="scenario-desc">消息发送、社交互动等</p>
                         </div>
                         <div class="scenario-stat-card">
                             <i class="fas fa-newspaper"></i>
-                            <h5>Content Consumption</h5>
-                            <p class="scenario-count">37 tasks (15.74%)</p>
-                            <p class="scenario-desc">News reading, video watching, content bookmarking, etc.</p>
+                            <h5>内容消费</h5>
+                            <p class="scenario-count">37个任务 (15.74%)</p>
+                            <p class="scenario-desc">新闻阅读、视频观看、内容收藏等</p>
                         </div>
                         <div class="scenario-stat-card">
                             <i class="fas fa-store"></i>
-                            <h5>Local Services</h5>
-                            <p class="scenario-count">16 tasks (6.81%)</p>
-                            <p class="scenario-desc">Food delivery, in-store services, etc.</p>
+                            <h5>本地服务</h5>
+                            <p class="scenario-count">16个任务 (6.81%)</p>
+                            <p class="scenario-desc">外卖、到店服务等</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Footer -->
+    <!-- 页脚 -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>GELab-Zero</h3>
-                    <p>Next-generation GUI Agent for mobile devices</p>
+                    <p>新一代移动设备GUI智能体</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Links</h4>
+                    <h4>链接</h4>
                     <ul>
                         <li><a href="https://github.com/stepfun-ai/gelab-zero" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
                         <li><a href="https://huggingface.co/stepfun-ai/GELab-Zero-4B-preview" target="_blank"><i class="fas fa-brain"></i> HuggingFace</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact</h4>
+                    <h4>联系方式</h4>
                     <ul>
                         <li><i class="fas fa-envelope"></i> tankaijun@stepfun.com</li>
                         <li><i class="fab fa-github"></i> OpenGELab</li>
@@ -855,7 +844,7 @@ python examples/run_single_task.py</code></pre>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 OpenGELab. All rights reserved.</p>
+                <p>&copy; 2025 OpenGELab. 保留所有权利。</p>
             </div>
         </div>
     </footer>
@@ -863,3 +852,4 @@ python examples/run_single_task.py</code></pre>
     <script src="script.js"></script>
 </body>
 </html>
+
