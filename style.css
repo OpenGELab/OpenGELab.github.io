@@ -47,6 +47,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .nav-brand h1 {
@@ -66,6 +67,7 @@ body {
     display: flex;
     list-style: none;
     gap: 2rem;
+    margin-right: 130px;
 }
 
 .nav-menu a {
@@ -77,6 +79,22 @@ body {
 
 .nav-menu a:hover {
     color: var(--primary-color);
+}
+
+.nav-logo {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-logo svg {
+    height: 26px;
+    width: auto;
+    display: block;
 }
 
 /* Hero Section */
@@ -1151,6 +1169,13 @@ body {
     .nav-menu {
         flex-wrap: wrap;
         justify-content: center;
+        margin-right: 0;
+    }
+    
+    .nav-logo {
+        position: static;
+        transform: none;
+        margin-top: 0.5rem;
     }
     
     .section-title {
